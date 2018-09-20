@@ -17,7 +17,7 @@ body {
 	font-family: 'Condiment', cursive;
 	font-size: 1.5em;
 	padding-top: 10px;
-	color: #ffffff;
+	color: #f2f2f2;
 	letter-spacing: 1px;
 }
 
@@ -28,14 +28,14 @@ body {
 
 .navbar .collapse .navbar-nav .nav-item .nav-link {
 	font-size: .9em;
-	color: #ffffff;
+	color: #f2f2f2;
 	font-weight: 550;
 }
 
 .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
 	color: #751B1B;
 	text-decoration: underline;
-	background-color: #ffffff;
+	background-color: #f2f2f2;
 }
 
 #one .navbar .navbar-toggler {
@@ -44,7 +44,7 @@ body {
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
 	font-size: .9em;
-	color: #ffffff;
+	color: #f2f2f2;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item {
@@ -79,10 +79,11 @@ body {
 /*cards*/
 #three {
 	padding: 5px 20px;
+	background-color: #f2f2f2;
 }
 
 #three .card-deck .card .btn-light:hover {
-	color: #ffffff;
+	color: #f2f2f2;
 	background-color: #680505;
 }
 
@@ -93,10 +94,23 @@ body {
 }
 
 #three a small:hover {
-	color: #ffffff;
+	color: #f2f2f2;
 	background-color: #914949;
 	border-radius: 1%;
 }
+
+#three .backtotop {
+	text-decoration: none;
+	color: #141414;
+	font-size: .8em;
+}
+
+#three .backtotop:hover {
+	text-decoration: none;
+	color: indianred;
+	font-size: .8em;
+}
+
 /*end of cards*/
 
 
@@ -113,7 +127,7 @@ body {
 }
 
 .footer [class*=col] h6{
-	text-shadow: #000000 1px 1px;
+	text-shadow: #141414 1px 1px;
 }
 
 .footer .row .col1 p {
@@ -122,7 +136,7 @@ body {
 
 .footer .row .col1 a {
 	text-decoration: none;
-	color: #ffffff;
+	color: #f2f2f2;
 }
 
 .footer .row .col1 a:hover {
@@ -141,7 +155,7 @@ body {
 .col2 .fab {
 	font-size: 1.5em;
 	letter-spacing: 5px;
-	color: #ffffff;
+	color: #f2f2f2;
 	padding-top: 20px;
 }
 

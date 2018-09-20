@@ -11,7 +11,7 @@ body {
 /*navbar*/
 .navbar {
 	background-color: transparent !important;
-	/*background-color: white !important;*/
+	/*background-color: #f2f2f2 !important;*/
 	/*opacity: .8;*/
 }
 
@@ -31,14 +31,14 @@ body {
 
 .navbar .collapse .navbar-nav .nav-item .nav-link {
 	font-size: .9em;
-	color: #ffffff;
+	color: #f2f2f2;
 	font-weight: 550;
 }
 
 .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
 	color: #751B1B;
 	text-decoration: underline;
-	background-color: #ffffff;
+	background-color: #f2f2f2;
 }
 
 #one .navbar .navbar-toggler {
@@ -47,7 +47,7 @@ body {
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
 	font-size: .9em;
-	color: #ffffff;
+	color: #f2f2f2;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item {
@@ -83,6 +83,7 @@ body {
 #two {
 	padding: 70px 50px 50px 50px;
 	text-align: justify;
+	background-color: #f2f2f2;
 }
 
 #two .row-one {
@@ -115,15 +116,16 @@ body {
 
 #about-img {
 	width: 100%;
+	transform: rotateY(180deg);
 }
 
 
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
 	#two .row-two .col-sm-12 img {
 		transform: scale(260px,156px);
 	}
 }
-
+*/
 
 
 /*end of about section*/
@@ -145,7 +147,7 @@ body {
 }
 
 .footer [class*=col] h6{
-	text-shadow: #000000 1px 1px;
+	text-shadow: #141414 1px 1px;
 }
 
 .footer .row .col1 p {
@@ -154,7 +156,7 @@ body {
 
 .footer .row .col1 a {
 	text-decoration: none;
-	color: #ffffff;
+	color: #f2f2f2;
 }
 
 .footer .row .col1 a:hover {
@@ -173,7 +175,7 @@ body {
 .col2 .fab {
 	font-size: 1.5em;
 	letter-spacing: 5px;
-	color: #ffffff;
+	color: #f2f2f2;
 	padding-top: 20px;
 }
 

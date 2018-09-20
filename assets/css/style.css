@@ -18,30 +18,30 @@ body {
 
 .jumbotron h1 {
 	font-family: 'Condiment', cursive;
-	color: #ffffff;
+	color: #f2f2f2;
 	font-size: 4em;
 	text-shadow: #914949 2px 2px;
 }
 
 .jumbotron p {
-	color: #ffffff;
+	color: #f2f2f2;
 }
 
 .jumbotron .btn {
 	background-color: #914949;
-	color: #ffffff;
+	color: #f2f2f2;
 	border: none;
 
 }
 
 .jumbotron .btn:hover {
-	background-color: #ffffff;
+	background-color: #f2f2f2;
 	color: #914949;
 	border: none;
 }
 
 [class*=col] {
-	border: 1px solid white;
+	border: 1px solid #f2f2f2;
 	padding: 40px;
 }
 
