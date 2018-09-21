@@ -51,18 +51,18 @@
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./recipes.html" role="button" aria-haspopup="true" aria-expanded="false">Recipes</a>
-							<div class="dropdown-menu">
+							<div class="dropdown-menu" data-toggle="collapse">
 								<a class="dropdown-item" href="./recipes.html">View All Recipes</a>
-								<a class="dropdown-item" href="./recipes.html#beefsukiyaki">Beef Sukiyaki</a>
-								<a class="dropdown-item" href="./recipes.html#broiledsalmon">Broiled Salmon</a>
-								<a class="dropdown-item" href="./recipes.html#chickenteriyaki">Chicken Teriyaki</a>
-								<a class="dropdown-item" href="./recipes.html#misosoup">Miso Soup</a>
-								<a class="dropdown-item" href="./recipes.html#onigiri">Onigiri</a>
-								<a class="dropdown-item" href="./recipes.html#ramen">Ramen</a>
-								<a class="dropdown-item" href="./recipes.html#sushi">Sushi</a>
-								<a class="dropdown-item" href="./recipes.html#sweetmochi">Sweet Peanut Mochi</a>
-								<a class="dropdown-item" href="./recipes.html#yakisoba">Yakisoba</a>
-								<a class="dropdown-item" href="./recipes.html#yakitori">Yakitori</a>	
+								<a class="dropdown-item" href="./recipes.html#recipe-one">Beef Sukiyaki</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-two">Broiled Salmon</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-three">Chicken Teriyaki</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-four">Miso Soup</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-five">Onigiri</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-six">Ramen</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-seven">Sushi</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-eight">Unagi Stick</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-nine">Yakisoba</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-ten">Yakitori</a>	
 							</div>
 						</li>
 						<li class="nav-item">
@@ -111,23 +111,124 @@
 						<div class="card-body">
 							<h5 class="card-title">Ramen</h5>
 							<p class="card-text">Wheat noodles in a meat-based broth, with toppings such as sliced pork, seaweed, green onions, and even corn.</p>
-							<a href="./recipes.html#ramen" type="button" class="btn btn-sm btn-light">View recipe</a>
+							<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#ramenModal">View recipe</a>
 						</div>
 					</div>
+					<div class="modal fade animated zoomIn animated zoomIn" id="ramenModal" tabindex="-1" role="dialog" aria-labelledby="ramenModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="ramenModalLabel">Ramen</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<h6>Ingredients</h6>
+											<ul type="a">
+												<li>1 package ramen noodle soup</li>
+												<li>Vegetables to add to soup</li>
+												<li>1 carrot, cut into very thin sticks, about 2 inches long</li>
+												<li>1 scallion, chopped</li>
+												<li>Daikon radish, cut into very thin sticks, about 2 inches long</li>
+												<li>1 mushroom, sliced thin</li>
+												<li>3 snow pea pods</li>
+												<li>1 Chinese cabbage leaf, shredded</li>
+											</ul>
+											<h6>Procedure</h6>
+											<ol>
+												<li>Make soup according to package directions.</li>
+												<li>Place up to four of the add-ins into a large soup bowl.</li>
+												<li>Carefully pour hot broth and noodles over vegetables</li>
+												<li>Use chopsticks to eat the vegetables and noodles, and drink the broth from the bowl.</li>
+											</ol>
+      									</div>
+									</div>
+								</div>
+							</div>
+
 					<div class="card">
-						<img class="card-img-top" src="./assets/img/sushi.jpg" alt="sushi stick" title="&copy; Mae Bunao">
+						<img class="card-img-top" src="./assets/img/unagi.jpg" alt="sushi stick" title="&copy; Mae Bunao">
 						<div class="card-body">
-							<h5 class="card-title">Sushi</h5>
-							<p class="card-text">Vinegared rice, commonly topped or mixed with fish or vegetables.</p>
-							<a href="./recipes.html#sushi" type="button" class="btn btn-sm btn-light">View recipe</a>
+							<h5 class="card-title">Unagi Stick</h5>
+							<p class="card-text">Grilled unagi is prized for its rich flavor and texture – crisp on the outside and tender on the inside.</p>
+							<a href="./recipes.html#unagi" type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#unagiModal">View recipe</a>
 						</div>
 					</div>
+					<div class="modal fade animated zoomIn animated zoomIn" id="unagiModal" tabindex="-1" role="dialog" aria-labelledby="unagiModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="unagiModalLabel">Unagi Stick</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<h6>Ingredients</h6>
+											<ul type="a">
+												<li>2 eel fillets</li>
+												<li>1 &frac12; tablespoons sake</li>
+												<li>&frac14; cup mirin</li>
+												<li>2 &frac12; tablespoons granulated sugar</li>
+												<li>&frac14; cup soy sauce</li>
+											</ul>
+											<h6>Procedure</h6>
+											<ol>
+												<li>Combine mirin and sake in a small saucepan and bring to a boil to evaporate alcohol.</li>
+												<li>Add sugar. Stir until completely dissolved.</li>
+												<li>Add soy sauce. Bring to a boil.</li>
+												<li>Reduce the heat and continue to simmer for about 10 minutes or until thickened. Remove from heat.</li>
+												<li>Preheat grill. Butterfly the Unagi so that it can be grilled flat.</li>
+												<li>Place on the grill with the skin down.</li>
+												<li>Close the lid and grill for about 3 minutes. Flip and grill for another 3 minutes.</li>
+												<li>Baste the skin with the Unagi sauce. Flip. Grill on high for about 1 minute.</li>
+												<li>Baste the meat. Flip. Grill on high for about 1 minute.</li>
+												<li>Remove from the grill and serve on a stick.</li>
+											</ol>
+      									</div>
+									</div>
+								</div>
+							</div>
+
 					<div class="card">
 						<img class="card-img-top" src="./assets/img/onigiri.jpg" alt="onigiri" title="&copy; Mae Bunao">
 						<div class="card-body">
 							<h5 class="card-title">Onigiri</h5>
 							<p class="card-text">Triangular rounded balls of rice that are wrapped in nori (seaweed) so that they are easier to hold. They are often used as a portable food that you don’t need chopsticks to eat.</p>
-							<a href="./recipes.html#onigiri" type="button" class="btn btn-sm btn-light">View recipe</a>
+							<a href="./recipes.html#onigiri" type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#onigiriModal">View recipe</a>
+						</div>
+					</div>
+					<div class="modal fade animated zoomIn animated zoomIn" id="onigiriModal" tabindex="-1" role="dialog" aria-labelledby="onigiriModalLabel" aria-hidden="true">
+  						<div class="modal-dialog" role="document">
+    						<div class="modal-content">
+      							<div class="modal-header">
+	        						<h5 class="modal-title" id="onigiriModalLabel">Onigiri</h5>
+	       							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          							<span aria-hidden="true">&times;</span>
+	        						</button>
+      							</div>
+      							<div class="modal-body">
+        							<h6>Ingredients</h6>
+									<ul type="a">
+										<li>2 cups cooked rice</li>
+										<li>Salt</li>
+										<li>Pickled plums, cut into small, bite-sized pieces</li>
+										<li>Cooked salmon, cut into small, bite-sized pieces</li>
+										<li>Dry seaweed sheets or <em>nori</em>, cut into strips</li>
+									</ul>
+									<h6>Procedure</h6>
+									<ol>
+										<li>Cook rice according to directions on package. Allow to cool slightly.</li>
+										<li>Have a bowl of lukewarm water handy.</li>
+										<li>Dip clean hands into water, and then sprinkle salt on wet hands.</li>
+										<li>Place a small mound of rice in the palm of your hand.</li>
+										<li>Press a piece of pickled plum or cooked salmon into the mound of rice.</li>
+										<li>Toss the mound back and forth between wet, salted hands to form a triangular mound, with the filling item in the center.</li>
+										<li>Wrap mound in a dry seaweed strip.</li>
+									</ol>
+      							</div>
+							</div>
 						</div>
 					</div>
 				</div>

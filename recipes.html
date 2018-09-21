@@ -29,6 +29,7 @@
 </head>
 <body>
 	<div class="container-fluid px-0">
+		<section id="top"></section>
 		<header id="one">
 			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 				<a href="./main.html" class="navbar-brand">Itadakimasu</a>
@@ -41,7 +42,7 @@
 							<a class="nav-link" href="./home.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="./about.html">About</a>
+							<a class="nav-link" href="./about.html">About</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="./history.html">History</a>
@@ -50,19 +51,19 @@
 							<a class="nav-link" href="./gallery.html">Gallery</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./recipes.html" role="button" aria-haspopup="true" aria-expanded="false">Recipes</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="./recipes.html">View All Recipes</a>
-								<a class="dropdown-item" href="./recipes.html#beefsukiyaki">Beef Sukiyaki</a>
-								<a class="dropdown-item" href="./recipes.html#broiledsalmon">Broiled Salmon</a>
-								<a class="dropdown-item" href="./recipes.html#chickenteriyaki">Chicken Teriyaki</a>
-								<a class="dropdown-item" href="./recipes.html#misosoup">Miso Soup</a>
-								<a class="dropdown-item" href="./recipes.html#onigiri">Onigiri</a>
-								<a class="dropdown-item" href="./recipes.html#ramen">Ramen</a>
-								<a class="dropdown-item" href="./recipes.html#sushi">Sushi</a>
-								<a class="dropdown-item" href="./recipes.html#sweetmochi">Sweet Peanut Mochi</a>
-								<a class="dropdown-item" href="./recipes.html#yakisoba">Yakisoba</a>
-								<a class="dropdown-item" href="./recipes.html#yakitori">Yakitori</a>	
+							<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="./recipes.html" role="button" aria-haspopup="true" aria-expanded="false">Recipes</a>
+							<div class="dropdown-menu" data-toggle="collapse" data-target=".navbar-collapse">
+								<a class="dropdown-item" href="#one">View All Recipes</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-one">Beef Sukiyaki</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-two">Broiled Salmon</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-three">Chicken Teriyaki</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-four">Miso Soup</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-five">Onigiri</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-six">Ramen</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-seven">Sushi</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-eight">Unagi Stick</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-nine">Yakisoba</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-ten">Yakitori</a>	
 							</div>
 						</li>
 						<li class="nav-item">
@@ -78,20 +79,87 @@
 				<div class="container">
 					<div class="row row1">
 						<div class="col-lg-6 col-md-12 col-sm-12">
-							<div class="card bg-dark text-white">
+							<div class="card bg-dark text-white" id="recipe-one">
 								<img class="card-img" src="./assets/img/landing4.jpg" alt="Beef Sukiyaki" title="&copy; Mae Bunao">
 								<div class="card-img-overlay">
 									<h5 class="card-title">Beef Sukiyaki</h5>
-									<a href="./recipes.html#beefsukiyaki" type="button" class="btn btn-sm btn-light">View recipe</a>
+									<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#sukiyakiModal">View recipe</a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="sukiyakiModal" tabindex="-1" role="dialog" aria-labelledby="sukiyakiModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="sukiyakiModalLabel">Beef Sukiyaki</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<h6>Ingredients</h6>
+											<ul type="a">
+												<li>&frac12; cup soy sauce</li>
+												<li>&frac14; cup sugar</li>
+												<li>&frac12; <em>dashi</em> or beef broth</li>
+												<li>2 tablespoons vegetable oil</li>
+												<li>1 pound beef tenderloin, sliced into thin strips</li>
+												<li>10 scallions, cut into 2-inch pieces (both and green and white parts)</li>
+												<li>4 stalks celery, sliced on an angle, in &frac12; -inch pieces</li>
+												<li>12 mushroom caps, sliced</li>
+												<li>8 ounces tofu or bean curd, cut into bite-sized cubes</li>
+												<li>1 can bamboo shoots, drained</li>
+												<li>4 cups rice, cooked</li>
+											</ul>
+											<h6>Procedure</h6>
+											<ol>
+												<li>Mix soy sauce, sugar, and <em>dashi</em> or broth in a bowl and set aside.</li>
+												<li>Arrange beef and vegetables on a large platter.</li>
+												<li>Heat an electric skillet 300 &#8457; or heat a frying pan over medium-high heat. Add oil and heat.</li>
+												<li>Add the meat and brown for 2 minutes.</li>
+												<li>Add the vegetables and the tofu, including the bamboo shoots, placing each on its own part of the skillet</li>
+												<li>Add the sauce and cook mixture for 6 to 7 minutes, turning gently to prevent burning and keeping all ingredients separate from each other. Serve at once over rice.</li>
+											</ol>
+      									</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-col-md-12 col-sm-12">
-							<div class="card bg-dark text-white">
+						<div class="col-lg-6 col-md-12 col-sm-12">
+							<div class="card bg-dark text-white" id="recipe-two">
 								<img class="card-img" src="./assets/img/broiledsalmon.jpg" alt="Broiled Salmon" title="&copy; boisdejasmin.com">
 								<div class="card-img-overlay">
 									<h5 class="card-title">Broiled Salmon</h5>
-									<a href="./recipes.html#broiledsalmon" type="button" class="btn btn-sm btn-light">View recipe</a>
+									<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#broiledSalmonModal">View recipe</a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="broiledSalmonModal" tabindex="-1" role="dialog" aria-labelledby="broiledSalmonModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="broiledSalmonModalLabel">Broiled Salmon</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<h6>Ingredients</h6>
+											<ul type="a">
+												<li>4 salmon steaks</li>
+												<li>&frac14; cup white soybean paste or <em>shiromiso</em></li>
+												<li>1 teaspoon sugar</li>
+												<li>2 Tablespoons low-sodium soy sauce</li>
+												<li>2 Tablespoons <em>sake</em></li>
+												<li>2 green onions, thinly-sliced</li>
+											</ul>
+											<h6>Procedure</h6>
+											<ol>
+												<li>Place salmon under broiler for 5 minutes each side.</li>
+												<li>Mix soybean paste, sugar, soy sauce, and <em>sake</em> together in a bowl.</li>
+												<li>Spread mixture on salmon steaks and broil another 2 minutes per side.</li>
+												<li>Garnish with the sliced green onions and serve immediately.</li>
+											</ol>
+      									</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -100,20 +168,80 @@
 				<div class="container">
 					<div class="row row2">
 						<div class="col-lg-6 col-md-12 col-sm-12">
-							<div class="card bg-dark text-white">
+							<div class="card bg-dark text-white" id="recipe-three">
 								<img class="card-img" src="./assets/img/chickenteriyaki.jpg" alt="Chicken Teriyaki" title="&copy; cooking.nytimes.com">
 								<div class="card-img-overlay">
 									<h5 class="card-title">Chicken Teriyaki</h5>
-									<a href="./recipes.html#chickenteriyaki" type="button" class="btn btn-sm btn-light">View recipe</a>
+									<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#teriyakiModal">View recipe</a>
 								</div>
 							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="teriyakiModal" tabindex="-1" role="dialog" aria-labelledby="teriyakiModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="teriyakiModalLabel">Chicken Teriyaki</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<h6>Ingredients</h6>
+											<ul type="a">
+												<li>&frac12; cup soy sauce</li>
+												<li>3 Tablespoons sugar</li>
+												<li>1 teaspoon fresh ginger root, grated</li>
+												<li>3 Tablespoons sesame seeds</li>
+												<li>1&frac12; to 2 pounds skinless, boneless chicken breast, cut into small serving pieces</li>
+											</ul>
+											<h6>Procedure</h6>
+											<ol>
+												<li>Preheat oven to 375 &#8457;</li>
+												<li>Combine soy sauce, sugar, ginger root, and sesame seeds in a large bowl.</li>
+												<li>Place chicken in a baking dish and pour sauce over it</li>
+												<li>Bake for 45 minutes. Turn chicken about every 15 minutes, coating with sauce in the process.</li>
+											</ol>
+      									</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
 						<div class="col-lg-6 col-md-12 col-sm-12">
-							<div class="card bg-dark text-white">
+							<div class="card bg-dark text-white" id="recipe-four">
 								<img class="card-img" src="./assets/img/miso.jpg" alt="Miso Soup" title="&copy; rouxbe.com">
 								<div class="card-img-overlay">
 									<h5 class="card-title">Miso Soup</h5>
-									<a href="./recipes.html#misosoup" type="button" class="btn btn-sm btn-light">View recipe</a>
+									<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#misoModal">View recipe</a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="misoModal" tabindex="-1" role="dialog" aria-labelledby="misoModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="misoModalLabel">Miso Soup</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<h6>Ingredients</h6>
+											<ul type="a">
+												<li>2 scallions</li>
+												<li>&frac14; pound tofu</li>
+												<li>1&frac14; cups <em>dashi</em> or 1 chicken bouillon cube, dissolved in 1 cup boiling water</li>
+												<li>2 Tablespoons red <em>miso</em></li>
+											</ul>
+											<h6>Procedure</h6>
+											<ol>
+												<li>Wash the scallions and cut the green parts into 1&frac12;inch lengths.</li>
+												<li>Cut the tofu into small cubes and place the scallions and tofu in soup bowls.</li>
+												<li>Boil the <em>dashi</em> in a saucepan.</li>
+												<li>Put a little of the boiling liquid in a bowl and mix with the <em>miso.</em></li>
+												<li>Pour back into the saucepan, then ladle into the soup bowls.</li>
+												<li>Serve immediately.</li>
+											</ol>
+      									</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -123,20 +251,84 @@
 				<div class="container">
 					<div class="row row3">
 						<div class="col-lg-6 col-md-12 col-sm-12">
-							<div class="card bg-dark text-black">
+							<div class="card bg-dark text-black" id="recipe-five">
 								<img class="card-img" src="./assets/img/onigiri.jpg" alt="Onigiri" title="&copy; Mae Bunao">
 								<div class="card-img-overlay">
 									<h5 class="card-title">Onigiri</h5>
-									<a href="./recipes.html#onigiri" type="button" class="btn btn-sm btn-light">View recipe</a>
+									<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#onigiriModal">View recipe</a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="onigiriModal" tabindex="-1" role="dialog" aria-labelledby="onigiriModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="onigiriModalLabel">Onigiri</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<h6>Ingredients</h6>
+											<ul type="a">
+												<li>2 cups cooked rice</li>
+												<li>Salt</li>
+												<li>Pickled plums, cut into small, bite-sized pieces</li>
+												<li>Cooked salmon, cut into small, bite-sized pieces</li>
+												<li>Dry seaweed sheets or <em>nori</em>, cut into strips</li>
+											</ul>
+											<h6>Procedure</h6>
+											<ol>
+												<li>Cook rice according to directions on package. Allow to cool slightly.</li>
+												<li>Have a bowl of lukewarm water handy.</li>
+												<li>Dip clean hands into water, and then sprinkle salt on wet hands.</li>
+												<li>Place a small mound of rice in the palm of your hand.</li>
+												<li>Press a piece of pickled plum or cooked salmon into the mound of rice.</li>
+												<li>Toss the mound back and forth between wet, salted hands to form a triangular mound, with the filling item in the center.</li>
+												<li>Wrap mound in a dry seaweed strip.</li>
+											</ol>
+      									</div>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-12 col-sm-12">
-							<div class="card bg-dark text-white">
+							<div class="card bg-dark text-white" id="recipe-six">
 								<img class="card-img" src="./assets/img/ramen.jpg" alt="Ramen" title="&copy; Mae Bunao">
 								<div class="card-img-overlay">
 									<h5 class="card-title">Ramen</h5>
-									<a href="./recipes.html#ramen" type="button" class="btn btn-sm btn-light">View recipe</a>
+									<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#ramenModal">View recipe</a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="ramenModal" tabindex="-1" role="dialog" aria-labelledby="ramenModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="ramenModalLabel">Ramen</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<h6>Ingredients</h6>
+											<ul type="a">
+												<li>1 package ramen noodle soup</li>
+												<li>Vegetables to add to soup</li>
+												<li>1 carrot, cut into very thin sticks, about 2 inches long</li>
+												<li>1 scallion, chopped</li>
+												<li>Daikon radish, cut into very thin sticks, about 2 inches long</li>
+												<li>1 mushroom, sliced thin</li>
+												<li>3 snow pea pods</li>
+												<li>1 Chinese cabbage leaf, shredded</li>
+											</ul>
+											<h6>Procedure</h6>
+											<ol>
+												<li>Make soup according to package directions.</li>
+												<li>Place up to four of the add-ins into a large soup bowl.</li>
+												<li>Carefully pour hot broth and noodles over vegetables</li>
+												<li>Use chopsticks to eat the vegetables and noodles, and drink the broth from the bowl.</li>
+											</ol>
+      									</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -146,20 +338,89 @@
 				<div class="container">
 					<div class="row row4">
 						<div class="col-lg-6 col-md-12 col-sm-12">
-							<div class="card bg-dark text-white">
+							<div class="card bg-dark text-white" id="recipe-seven">
 								<img class="card-img" src="./assets/img/sushi.jpg" alt="Sushi" title="&copy; Mae Bunao">
 								<div class="card-img-overlay">
 									<h5 class="card-title">Sushi</h5>
-									<a href="./recipes.html#sushi" type="button" class="btn btn-sm btn-light">View recipe</a>
+									<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#sushiModal">View recipe</a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="sushiModal" tabindex="-1" role="dialog" aria-labelledby="sushiModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="sushiModalLabel">Sushi</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<h6>Ingredients</h6>
+											<ul type="a">
+												<li>Small bamboo mat or <em>makisu</em> for preparing sushi</li>
+												<li>Dry seaweed sheets or <em>nori</em></li>
+												<li>Bowl of water to which 1 Tablespoon vinegar has been added</li>
+												<li><em>Wasabi</em></li>
+												<li>Strips of avocado, cucumber, carrot, or other vegetable</li>
+												<li>Cooked shrimp or crab meat</li>
+											</ul>
+											<h6>Procedure</h6>
+											<ol>
+												<li>Place a sheet of <em>nori</em>, shiny side down, on the <em>makisu</em>.</li>
+												<li>Wet your one hand in the bowl of vinegar water, and use it to scoop up a ball of rice.</li>
+												<li>Spread the rice out in an even layer on one side of the <em>nori</em>.</li>
+												<li>Sprinkle a line of <em>wasabi</em> down the center of the rice.</li>
+												<li>Arrange the strips of vegetables and seafood over the line of <em>wasabi</em>.</li>
+												<li>Using the mat to support the <em>nori</em> , lift one end of the mat to gently roll the <em>nori</em> over the rice and other ingredients.</li>
+												<li>Continue rolling until a long cylinder is formed, completely encased in <em>nori</em>.</li>
+												<li>Slice and serve immediately.</li>
+											</ol>
+      									</div>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-12 col-sm-12">
-							<div class="card bg-dark text-black">
-								<img class="card-img" src="./assets/img/mochi.jpg" alt="Sweet Peanut Mochi" title="&copy; aviliaway.wordpress.com">
+							<div class="card bg-dark text-black" id="recipe-eight">
+								<img class="card-img" src="./assets/img/unagi.jpg" alt="Unagi Stick" title="&copy; Mae Bunao">
 								<div class="card-img-overlay">
-									<h5 class="card-title">Sweet Peanut Mochi</h5>
-									<a href="./recipes.html#sweetmochi" type="button" class="btn btn-sm btn-light">View recipe</a>
+									<h5 class="card-title">Unagi Stick</h5>
+									<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#unagiModal">View recipe</a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="unagiModal" tabindex="-1" role="dialog" aria-labelledby="unagiModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="unagiModalLabel">Unagi Stick</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<h6>Ingredients</h6>
+											<ul type="a">
+												<li>2 eel fillets</li>
+												<li>1 &frac12; tablespoons sake</li>
+												<li>&frac14; cup mirin</li>
+												<li>2 &frac12; tablespoons granulated sugar</li>
+												<li>&frac14; cup soy sauce</li>
+											</ul>
+											<h6>Procedure</h6>
+											<ol>
+												<li>Combine mirin and sake in a small saucepan and bring to a boil to evaporate alcohol.</li>
+												<li>Add sugar. Stir until completely dissolved.</li>
+												<li>Add soy sauce. Bring to a boil.</li>
+												<li>Reduce the heat and continue to simmer for about 10 minutes or until thickened. Remove from heat.</li>
+												<li>Preheat grill. Butterfly the Unagi so that it can be grilled flat.</li>
+												<li>Place on the grill with the skin down.</li>
+												<li>Close the lid and grill for about 3 minutes. Flip and grill for another 3 minutes.</li>
+												<li>Baste the skin with the Unagi sauce. Flip. Grill on high for about 1 minute.</li>
+												<li>Baste the meat. Flip. Grill on high for about 1 minute.</li>
+												<li>Remove from the grill and serve on a stick.</li>
+											</ol>
+      									</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -169,20 +430,93 @@
 				<div class="container">
 					<div class="row row5">
 						<div class="col-lg-6 col-md-12 col-sm-12">
-							<div class="card bg-dark text-black">
+							<div class="card bg-dark text-black" id="recipe-nine">
 								<img class="card-img" src="./assets/img/yakisoba.jpg" alt="Yakisoba" title="&copy; savorflavorasia.com">
 								<div class="card-img-overlay">
 									<h5 class="card-title">Yakisoba</h5>
-									<a href="./recipes.html#yakisoba" type="button" class="btn btn-sm btn-light">View recipe</a>
+									<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#yakisobaModal">View recipe</a>
 								</div>
 							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="yakisobaModal" tabindex="-1" role="dialog" aria-labelledby="yakisobaModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="yakisobaModalLabel">Yakisoba</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<h6>Ingredients</h6>
+											<ul type="a">
+												<li>2 to 3 medium-sized shiitake mushrooms</li>
+												<li>8 ounces fresh ramen or 6 ounces dried noodles</li>
+												<li>3 Tablespoons vegetable oil</li>
+												<li>1 small to medium-sized onion, chopped</li>
+												<li>2 teaspoons ginger root, minced</li>
+												<li>2 cups green cabbage leaves, coarsely chopped</li>
+												<li>1 Tablespoon <em>mirin</em></li>
+												<li>2 to 3 teaspoons soy sauce</li>
+												<li>2 to 3 dashes black pepper</li>
+												<li>Salt, to taste</li>
+											</ul>
+											<h6>Procedure</h6>
+											<ol>
+												<li>Soak mushrooms in a bowl of warm water for 30 minutes.</li>
+												<li>Dry mushrooms. Cut off stems and discard. Slice mushrooms thinly.</li>
+												<li>Bring 3 quarts of water to a boil in a large pot and add ramen. Cook 1 to 2 minutes or until tender yet firm.</li>
+												<li>Rinse ramen; drain well. Toss with 1 Tablespoon of the oil; set aside.</li>
+												<li>Heat remaining 2 Tablespoons oil in a wok or large skillet over medium to high heat.</li>
+												<li>Add onion and ginger root and stir-fry for 2 minutes</li>
+												<li>Add cabbage and mushrooms; stir-fry 3 minutes. Sprinkle with <em>mirin</em>. Stir-fry 1 minute more.</li>
+												<li>Add ramen; toss until hot. Season with soy sauce, pepper, onions, and salt.</li>
+												<li>Shrimp, ham, chicken, or other tempura can be added.</li>
+											</ol>
+      									</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
 						<div class="col-lg-6 col-md-12 col-sm-12">
-							<div class="card bg-dark text-black">
+							<div class="card bg-dark text-black" id="recipe-ten">
 								<img class="card-img" src="./assets/img/yakitori.jpg" alt="Yakitori" title="&copy; straight.com">
 								<div class="card-img-overlay">
 									<h5 class="card-title">Yakitori</h5>
-									<a href="./recipes.html#yakitori" type="button" class="btn btn-sm btn-light">View recipe</a>
+									<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#yakitoriModal">View recipe</a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="yakitoriModal" tabindex="-1" role="dialog" aria-labelledby="yakitoriModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="yakitoriModalLabel">Yakitori</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<h6>Ingredients</h6>
+											<ul type="a">
+												<li>2 skinless, boneless chicken breasts</li>
+												<li>2 small leeks</li>
+												<li>2 teaspoons sugar</li>
+												<li>4 Tablespoons soy sauce</li>
+												<li>Bamboo skewers, soaked in water for 30 minutes prior to using</li>
+											</ul>
+											<h6>Procedure</h6>
+											<ol>
+												<li>Cut chicken into bite-sized chunks.</li>
+												<li>Wash leeks, remove the roots, and cut into &frac34; inch lengths.</li>
+												<li>Slide the chicken and leeks onto bamboo skewers.</li>
+												<li>In a bowl, mix the sugar and soy sauce together.</li>
+												<li>Spoon a little of this mixture over the chicken skewers.</li>
+												<li>Broil for 5 minutes.</li>
+												<li>Turn the skewers over, spoon on some more sauce, and cook for 5 more minutes.</li>
+												<li>Serve hot and eat with your fingers.</li>
+											</ol>
+      									</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -191,338 +525,9 @@
 				<a class="backtotop" href="#one">Back to Top</a>
 				<hr>
 			</section>
-			<section id="three">
-				<div class="all-recipes" id="beefsukiyaki">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h5>Beef Sukiyaki</h5>
-							<img class="img-fluid" src="./assets/img/landing4.jpg">
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h6>Ingredients</h6>
-							<ul type="a">
-								<li>&frac12; cup soy sauce</li>
-								<li>&frac14; cup sugar</li>
-								<li>&frac12; <em>dashi</em> or beef broth</li>
-								<li>2 tablespoons vegetable oil</li>
-								<li>1 pound beef tenderloin, sliced into thin strips</li>
-								<li>10 scallions, cut into 2-inch pieces (both and green and white parts)</li>
-								<li>4 stalks celery, sliced on an angle, in &frac12; -inch pieces</li>
-								<li>12 mushroom caps, sliced</li>
-								<li>8 ounces tofu or bean curd, cut into bite-sized cubes</li>
-								<li>1 can bamboo shoots, drained</li>
-								<li>4 cups rice, cooked</li>
-							</ul>
-							<h6>Procedure</h6>
-							<ol>
-								<li>Mix soy sauce, sugar, and <em>dashi</em> or broth in a bowl and set aside.</li>
-								<li>Arrange beef and vegetables on a large platter.</li>
-								<li>Heat an electric skillet 300 &#8457; or heat a frying pan over medium-high heat. Add oil and heat.</li>
-								<li>Add the meat and brown for 2 minutes.</li>
-								<li>Add the vegetables and the tofu, including the bamboo shoots, placing each on its own part of the skillet</li>
-								<li>Add the sauce and cook mixture for 6 to 7 minutes, turning gently to prevent burning and keeping all ingredients separate from each other. Serve at once over rice.</li>
-							</ol>
-						</div>
-					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
-					<hr>
-				</div>
+			<!-- <section id="three">
 
-				<div class="all-recipes" id="broiledsalmon">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h5>Broiled Salmon</h5>
-							<img class="img-fluid" src="./assets/img/broiledsalmon.jpg">
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h6>Ingredients</h6>
-							<ul type="a">
-								<li>4 salmon steaks</li>
-								<li>&frac14; cup white soybean paste or <em>shiromiso</em></li>
-								<li>1 teaspoon sugar</li>
-								<li>2 Tablespoons low-sodium soy sauce</li>
-								<li>2 Tablespoons <em>sake</em></li>
-								<li>2 green onions, thinly-sliced</li>
-							</ul>
-							<h6>Procedure</h6>
-							<ol>
-								<li>Place salmon under broiler for 5 minutes each side.</li>
-								<li>Mix soybean paste, sugar, soy sauce, and <em>sake</em> together in a bowl.</li>
-								<li>Spread mixture on salmon steaks and broil another 2 minutes per side.</li>
-								<li>Garnish with the sliced green onions and serve immediately.</li>
-							</ol>
-						</div>
-					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
-					<hr>
-				</div>
-
-				<div class="all-recipes" id="chickenteriyaki">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h5>Chicken Teriyaki</h5>
-							<img class="img-fluid" src="./assets/img/chickenteriyaki.jpg">
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h6>Ingredients</h6>
-							<ul type="a">
-								<li>&frac12; cup soy sauce</li>
-								<li>3 Tablespoons sugar</li>
-								<li>1 teaspoon fresh ginger root, grated</li>
-								<li>3 Tablespoons sesame seeds</li>
-								<li>1&frac12; to 2 pounds skinless, boneless chicken breast, cut into small serving pieces</li>
-							</ul>
-							<h6>Procedure</h6>
-							<ol>
-								<li>Preheat oven to 375 &#8457;</li>
-								<li>Combine soy sauce, sugar, ginger root, and sesame seeds in a large bowl.</li>
-								<li>Place chicken in a baking dish and pour sauce over it</li>
-								<li>Bake for 45 minutes. Turn chicken about every 15 minutes, coating with sauce in the process.</li>
-							</ol>
-						</div>
-					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
-					<hr>
-				</div>
-
-				<div class="all-recipes" id="misosoup">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h5>Miso Soup</h5>
-							<img class="img-fluid" src="./assets/img/miso.jpg">
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h6>Ingredients</h6>
-							<ul type="a">
-								<li>2 scallions</li>
-								<li>&frac14; pound tofu</li>
-								<li>1&frac14; cups <em>dashi</em> or 1 chicken bouillon cube, dissolved in 1 cup boiling water</li>
-								<li>2 Tablespoons red <em>miso</em></li>
-							</ul>
-							<h6>Procedure</h6>
-							<ol>
-								<li>Wash the scallions and cut the green parts into 1&frac12;inch lengths.</li>
-								<li>Cut the tofu into small cubes and place the scallions and tofu in soup bowls.</li>
-								<li>Boil the <em>dashi</em> in a saucepan.</li>
-								<li>Put a little of the boiling liquid in a bowl and mix with the <em>miso.</em></li>
-								<li>Pour back into the saucepan, then ladle into the soup bowls.</li>
-								<li>Serve immediately.</li>
-							</ol>
-						</div>
-					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
-					<hr>
-				</div>
-
-				<div class="all-recipes" id="onigiri">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h5>Onigiri</h5>
-							<img class="img-fluid" src="./assets/img/onigiri.jpg">
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h6>Ingredients</h6>
-							<ul type="a">
-								<li>2 cups cooked rice</li>
-								<li>Salt</li>
-								<li>Pickled plums, cut into small, bite-sized pieces</li>
-								<li>Cooked salmon, cut into small, bite-sized pieces</li>
-								<li>Dry seaweed sheets or <em>nori</em>, cut into strips</li>
-							</ul>
-							<h6>Procedure</h6>
-							<ol>
-								<li>Cook rice according to directions on package. Allow to cool slightly.</li>
-								<li>Have a bowl of lukewarm water handy.</li>
-								<li>Dip clean hands into water, and then sprinkle salt on wet hands.</li>
-								<li>Place a small mound of rice in the palm of your hand.</li>
-								<li>Press a piece of pickled plum or cooked salmon into the mound of rice.</li>
-								<li>Toss the mound back and forth between wet, salted hands to form a triangular mound, with the filling item in the center.</li>
-								<li>Wrap mound in a dry seaweed strip.</li>
-							</ol>
-						</div>
-					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
-					<hr>
-				</div>
-
-				<div class="all-recipes" id="ramen">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h5>Ramen</h5>
-							<img class="img-fluid" src="./assets/img/ramen.jpg">
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h6>Ingredients</h6>
-							<ul type="a">
-								<li>1 package ramen noodle soup</li>
-								<li>Vegetables to add to soup</li>
-								<li>1 carrot, cut into very thin sticks, about 2 inches long</li>
-								<li>1 scallion, chopped</li>
-								<li>Daikon radish, cut into very thin sticks, about 2 inches long</li>
-								<li>1 mushroom, sliced thin</li>
-								<li>3 snow pea pods</li>
-								<li>1 Chinese cabbage leaf, shredded</li>
-							</ul>
-							<h6>Procedure</h6>
-							<ol>
-								<li>Make soup according to package directions.</li>
-								<li>Place up to four of the add-ins into a large soup bowl.</li>
-								<li>Carefully pour hot broth and noodles over vegetables</li>
-								<li>Use chopsticks to eat the vegetables and noodles, and drink the broth from the bowl.</li>
-							</ol>
-						</div>
-					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
-					<hr>
-				</div>
-
-				<div class="all-recipes" id="sushi">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h5>Sushi</h5>
-							<img class="img-fluid" src="./assets/img/sushi.jpg">
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h6>Ingredients</h6>
-							<ul type="a">
-								<li>Small bamboo mat or <em>makisu</em> for preparing sushi</li>
-								<li>Dry seaweed sheets or <em>nori</em></li>
-								<li>Bowl of water to which 1 Tablespoon vinegar has been added</li>
-								<li><em>Wasabi</em></li>
-								<li>Strips of avocado, cucumber, carrot, or other vegetable</li>
-								<li>Cooked shrimp or crab meat</li>
-							</ul>
-							<h6>Procedure</h6>
-							<ol>
-								<li>Place a sheet of <em>nori</em>, shiny side down, on the <em>makisu</em>.</li>
-								<li>Wet your one hand in the bowl of vinegar water, and use it to scoop up a ball of rice.</li>
-								<li>Spread the rice out in an even layer on one side of the <em>nori</em>.</li>
-								<li>Sprinkle a line of <em>wasabi</em> down the center of the rice.</li>
-								<li>Arrange the strips of vegetables and seafood over the line of <em>wasabi</em>.</li>
-								<li>Using the mat to support the <em>nori</em> , lift one end of the mat to gently roll the <em>nori</em> over the rice and other ingredients.</li>
-								<li>Continue rolling until a long cylinder is formed, completely encased in <em>nori</em>.</li>
-								<li>Slice and serve immediately.</li>
-							</ol>
-						</div>
-					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
-					<hr>
-				</div>
-
-				<div class="all-recipes" id="sweetmochi">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h5>Sweet Peanut Mochi</h5>
-							<img class="img-fluid" src="./assets/img/mochi.jpg">
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h6>Ingredients</h6>
-							<ul type="a">
-								<li>1 cup sweet glutinous-rice flour</li>
-								<li>&frac14; teaspoon salt</li>
-								<li>&frac14; cup light brown sugar, packed</li>
-								<li>&frac13; cup cocktail peanuts, unsalted</li>
-								<li>&frac12; cup water</li>
-								<li>Potato starch or cornstarch</li>
-								<li>Orange blossom honey, rice syrup, or molasses</li>
-								<li>&frac12; cup roasted soybean powder or <em>kinako</em></li>
-							</ul>
-							<h6>Procedure</h6>
-							<ol>
-								<li>In a medium-size bowl, combine rice flour, salt, and brown sugar.</li>
-								<li>In a blender or food processor, grind peanuts until they form a paste.</li>
-								<li>Add the water; process until blended, scraping sides of container once or twice.</li>
-								<li>Pour peanut mixture into rice-flour mixture. Stir to form a stiff dough.</li>
-								<li>Lightly knead dough about 30 seconds.</li>
-								<li>In a wok or deep pot, bring 4 cups of water to a boil.</li>
-								<li>Spread a piece of dampened and unbleached muslin or several layers of cheesecloth over a steamer tray.</li>
-								<li>Spread the dough evenly over the cloth, about &frac12; inch thick.</li>
-								<li>Place the steamer into the pot, over the boiling water. Cover and steam for 20 minutes.</li>
-								<li>Remove tray from pan and lift out cloth with dough.</li>
-								<li>Pull away cloth, dropping dough onto a flat surface dusted with potato starch or cornstarch. Cool 2 minutes.</li>
-								<li>Knead 1 minute or until smooth and shiny.</li>
-								<li>Roll dough into an 8-inch long sausage roll and cut into 8 equal pieces.</li>
-								<li>Dust lightly with cornstarch to prevent sticking. Form into smooth, round shapes.</li>
-								<li>Drizzle rice cakes with honey and roll in soybean powder. Serve with hot green tea.</li>
-							</ol>
-						</div>
-					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
-					<hr>
-				</div>
-
-				<div class="all-recipes" id="yakisoba">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h5>Yakisoba</h5>
-							<img class="img-fluid" src="./assets/img/yakisoba.jpg">
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h6>Ingredients</h6>
-							<ul type="a">
-								<li>2 to 3 medium-sized shiitake mushrooms</li>
-								<li>8 ounces fresh ramen or 6 ounces dried noodles</li>
-								<li>3 Tablespoons vegetable oil</li>
-								<li>1 small to medium-sized onion, chopped</li>
-								<li>2 teaspoons ginger root, minced</li>
-								<li>2 cups green cabbage leaves, coarsely chopped</li>
-								<li>1 Tablespoon <em>mirin</em></li>
-								<li>2 to 3 teaspoons soy sauce</li>
-								<li>2 to 3 dashes black pepper</li>
-								<li>Salt, to taste</li>
-							</ul>
-							<h6>Procedure</h6>
-							<ol>
-								<li>Soak mushrooms in a bowl of warm water for 30 minutes.</li>
-								<li>Dry mushrooms. Cut off stems and discard. Slice mushrooms thinly.</li>
-								<li>Bring 3 quarts of water to a boil in a large pot and add ramen. Cook 1 to 2 minutes or until tender yet firm.</li>
-								<li>Rinse ramen; drain well. Toss with 1 Tablespoon of the oil; set aside.</li>
-								<li>Heat remaining 2 Tablespoons oil in a wok or large skillet over medium to high heat.</li>
-								<li>Add onion and ginger root and stir-fry for 2 minutes</li>
-								<li>Add cabbage and mushrooms; stir-fry 3 minutes. Sprinkle with <em>mirin</em>. Stir-fry 1 minute more.</li>
-								<li>Add ramen; toss until hot. Season with soy sauce, pepper, onions, and salt.</li>
-								<li>Shrimp, ham, chicken, or other tempura can be added.</li>
-							</ol>
-						</div>
-					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
-					<hr>
-				</div>
-
-				<div class="all-recipes" id="yakitori">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h5>Yakitori</h5>
-							<img class="img-fluid" src="./assets/img/yakitori.jpg">
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<h6>Ingredients</h6>
-							<ul type="a">
-								<li>2 skinless, boneless chicken breasts</li>
-								<li>2 small leeks</li>
-								<li>2 teaspoons sugar</li>
-								<li>4 Tablespoons soy sauce</li>
-								<li>Bamboo skewers, soaked in water for 30 minutes prior to using</li>
-							</ul>
-							<h6>Procedure</h6>
-							<ol>
-								<li>Cut chicken into bite-sized chunks.</li>
-								<li>Wash leeks, remove the roots, and cut into &frac34; inch lengths.</li>
-								<li>Slide the chicken and leeks onto bamboo skewers.</li>
-								<li>In a bowl, mix the sugar and soy sauce together.</li>
-								<li>Spoon a little of this mixture over the chicken skewers.</li>
-								<li>Broil for 5 minutes.</li>
-								<li>Turn the skewers over, spoon on some more sauce, and cook for 5 more minutes.</li>
-								<li>Serve hot and eat with your fingers.</li>
-							</ol>
-						</div>
-					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
-					<hr>
-				</div>
-
-
-			</section>
+			</section> -->
 		</main>
 		<footer>
 			<section id="four">

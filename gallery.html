@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Condiment|Quicksand|Roboto|Roboto+Slab" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/gallery-style.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.png">
+
+	<title>Itadakimasu</title>
+</head>
+<body>
+	<div class="container-fluid px-0">
+		<header id="one">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+				<a href="./main.html" class="navbar-brand">Itadakimasu</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="./home.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./history.html">History</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="./gallery.html">Gallery</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./recipes.html" role="button" aria-haspopup="true" aria-expanded="false">Recipes</a>
+							<div class="dropdown-menu" data-toggle="collapse">
+								<a class="dropdown-item" href="./recipes.html">View All Recipes</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-one">Beef Sukiyaki</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-two">Broiled Salmon</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-three">Chicken Teriyaki</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-four">Miso Soup</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-five">Onigiri</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-six">Ramen</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-seven">Sushi</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-eight">Unagi Stick</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-nine">Yakisoba</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-ten">Yakitori</a>	
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="two">
+				<h1>Gallery</h1>
+				<div class="container">
+					<!-- row 1 -->
+					<div class="row row1">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/1.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img1Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img1Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="img1Modal" tabindex="-1" role="dialog" aria-labelledby="img1ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img1ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/1.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/2.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img2Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img2Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img2Modal" tabindex="-1" role="dialog" aria-labelledby="img2ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img2ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/2.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/3.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img3Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img3Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img3Modal" tabindex="-1" role="dialog" aria-labelledby="img3ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img3ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/3.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/4.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img4Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img4Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img4Modal" tabindex="-1" role="dialog" aria-labelledby="img4ModalLabel	" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img4ModalLabel	">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/4.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- end of row 1 -->
+
+				<!-- row 2 -->
+					<div class="row row2">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/5.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img5Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img5Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="img5Modal" tabindex="-1" role="dialog" aria-labelledby="img5ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img5ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/5.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/6.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img6Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img6Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img6Modal" tabindex="-1" role="dialog" aria-labelledby="img6ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img6ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/6.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/7.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img7Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img7Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img7Modal" tabindex="-1" role="dialog" aria-labelledby="img7ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img7ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/7.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/8.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img8Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img8Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img8Modal" tabindex="-1" role="dialog" aria-labelledby="img8ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img8ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/8.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- end of row 2 -->
+
+				<!-- row 3 -->
+					<div class="row row3">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/9.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img9Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img9Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="img9Modal" tabindex="-1" role="dialog" aria-labelledby="img9ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img9ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/9.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/10.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img10Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img10Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img10Modal" tabindex="-1" role="dialog" aria-labelledby="img10ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img10ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/10.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/11.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img11Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img11Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img11Modal" tabindex="-1" role="dialog" aria-labelledby="img11ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img11ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/11.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/12.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img12Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img12Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img12Modal" tabindex="-1" role="dialog" aria-labelledby="img12ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img12ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/12.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<!-- end of row 3 -->
+
+				<!-- row 4 -->
+					<div class="row row4">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/13.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img13Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img13Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="img13Modal" tabindex="-1" role="dialog" aria-labelledby="img13ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img13ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/13.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/14.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img14Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img14Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img14Modal" tabindex="-1" role="dialog" aria-labelledby="img14ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img14ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/14.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/15.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img15Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img15Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img15Modal" tabindex="-1" role="dialog" aria-labelledby="img15ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img15ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/15.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/16.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img16Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img16Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img16Modal" tabindex="-1" role="dialog" aria-labelledby="img16ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img16ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/16.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<!-- end of row 4 -->
+
+				<!-- row 5 -->
+					<div class="row row5">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/17.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img17Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img17Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="img17Modal" tabindex="-1" role="dialog" aria-labelledby="img17ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img17ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/17.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/18.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img18Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img18Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img18Modal" tabindex="-1" role="dialog" aria-labelledby="img18ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img18ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/18.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/19.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img19Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img19Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img19Modal" tabindex="-1" role="dialog" aria-labelledby="img19ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img19ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/19.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/20.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img20Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img20Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img20Modal" tabindex="-1" role="dialog" aria-labelledby="img20ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img20ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/20.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- end of row 5 -->
+
+				<!-- row 6 -->
+					<div class="row row6">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/21.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img21Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img21Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="img21Modal" tabindex="-1" role="dialog" aria-labelledby="img21ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img21ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/21.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/22.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img22Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img22Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img22Modal" tabindex="-1" role="dialog" aria-labelledby="img22ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img22ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/22.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/23.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img23Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img23Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img23Modal" tabindex="-1" role="dialog" aria-labelledby="img23ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img23ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/23.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/24.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img24Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img24Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img24Modal" tabindex="-1" role="dialog" aria-labelledby="img24ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img24ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/24.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- end of row 6 -->
+
+				<!-- row 7 -->
+					<div class="row row7">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/25.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img25Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img25Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="img25Modal" tabindex="-1" role="dialog" aria-labelledby="img25ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img25ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/25.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/26.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img26Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img26Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img26Modal" tabindex="-1" role="dialog" aria-labelledby="img26ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img26ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/26.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/27.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img27Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img27Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img27Modal" tabindex="-1" role="dialog" aria-labelledby="img27ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img27ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/27.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/28.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img28Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img28Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img28Modal" tabindex="-1" role="dialog" aria-labelledby="img28ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img28ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/28.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- end of row 7 -->
+
+				<!-- row 8 -->
+					<div class="row row8">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/29.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img29Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img29Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="img29Modal" tabindex="-1" role="dialog" aria-labelledby="img29ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img29ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/29.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/30.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img30Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img30Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img30Modal" tabindex="-1" role="dialog" aria-labelledby="img30ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img30ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/30.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/31.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img31Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img31Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img31Modal" tabindex="-1" role="dialog" aria-labelledby="img31ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img31ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/31.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/32.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img32Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img32Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img32Modal" tabindex="-1" role="dialog" aria-labelledby="img32ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img32ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/32.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- end of row 8 -->
+
+				<!-- row 9 -->
+					<div class="row row9">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/33.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img33Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img33Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="img33Modal" tabindex="-1" role="dialog" aria-labelledby="img33ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img33ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/33.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/34.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img34Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img34Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img34Modal" tabindex="-1" role="dialog" aria-labelledby="img34ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img34ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/34.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/35.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img35Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img35Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img35Modal" tabindex="-1" role="dialog" aria-labelledby="img35ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img35ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/35.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/36.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<small class="card-title">Caption</small>
+									<br>
+									<a href="img36Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#img36Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="img36Modal" tabindex="-1" role="dialog" aria-labelledby="img36ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="img36ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/36.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- end of row 9 -->
+				</div>
+			</section>
+			<hr>
+			<!-- end of gallery1 -->
+
+			<!-- coffee gallery -->
+			<section id="three">
+				<h3>Coffee in Japan</h3>
+				<div class="container">
+					<!-- row1 -->
+					<div class="row row1">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee1.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee1Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee1Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="imgcoffee1Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee1ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee1ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee1.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee2.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee2Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee2Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="imgcoffee2Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee2ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee2ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee2.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee3.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee3Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee3Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="imgcoffee3Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee3ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee3ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee3.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee4.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee4Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee4Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="imgcoffee4Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee4ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee4ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee4.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end of row 1	 -->
+
+					<!-- row 2 -->
+					<div class="row row2">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee5.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee5Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee5Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="imgcoffee5Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee5ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee5ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee5.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee6.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee6Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee6Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="imgcoffee6Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee6ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee6ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee6.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee7.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee7Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee7Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="imgcoffee7Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee7ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee7ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee7.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee8.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee8Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee8Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="imgcoffee8Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee8ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee8ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee8.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end of row 2 -->
+
+					<!-- row 3 -->
+					<div class="row row3">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee9.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee9Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee9Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="imgcoffee9Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee9ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee9ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee9.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee10.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee10Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee10Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="imgcoffee10Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee10ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee10ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee10.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee11.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee11Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee11Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="imgcoffee11Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee11ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee11ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee11.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee12.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee12Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee12Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="imgcoffee12Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee12ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee12ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee12.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end of row 3 -->
+
+					<!-- row 4 -->
+					<div class="row row4">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee13.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee13Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee13Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn animated zoomIn" id="imgcoffee13Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee13ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee13ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee13.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee14.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee14Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee14Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="imgcoffee14Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee14ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee14ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee14.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee15.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee15Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee15Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="imgcoffee15Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee15ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee15ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee15.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="card">
+								<img class="card-img-top" src="./assets/img/coffee16.jpg" alt="caption1" title="&copy; Mae Bunao">
+								<div class="card-body">
+									<a href="imgcoffee16Modal" class="btn btn-light btn-sm" data-toggle="modal" data-target="#imgcoffee16Modal"><small>View Full Image</small></a>
+								</div>
+							</div>
+							<div class="modal fade animated zoomIn" id="imgcoffee16Modal" tabindex="-1" role="dialog" aria-labelledby="imgcoffee16ModalLabel" aria-hidden="true">
+  								<div class="modal-dialog" role="document">
+    								<div class="modal-content">
+      									<div class="modal-header">
+	        								<h5 class="modal-title" id="imgcoffee16ModalLabel">caption</h5>
+	       									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          									<span aria-hidden="true">&times;</span>
+	        								</button>
+      									</div>
+      									<div class="modal-body">
+        									<img class="img-fluid" src="./assets/img/coffee16.jpg">
+      									</div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+					</div>
+
+					<!-- end of row 4 -->
+				</div>
+			</section>
+
+		</main>
+		<footer>
+			<section id="four">
+				<div class="footer">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-12 col1">
+							<h6>Contact Us</h6>
+							<p>Itadakimasu</p>
+							<p>Give us a call: 09123456789</p>
+							<p>Send us an email:<a href="mailto:ramen@itadakimasu.com"> ramen@itadakimasu.com</a></p>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col2">
+							<h6>Visit Our Social Media Accounts</h6>
+							<a href=""><i class="fab fa-facebook" title="Visit our Facebook Profile"></i></a>
+							<a href=""><i class="fab fa-instagram" title="Visit our Instagram Account"></i></a>
+							<a href=""><i class="fab fa-twitter-square" title="Visit our Twitter Account"></i></a>
+							<div>
+								<p class="disclaimer">Disclaimer: No copyright infringement intended, we do not own the content nor we take credit for it, we are not selling the website or making profits from it and it is used only for educational purposes. Photos taken by Mae Bunao.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col3">
+							<h6>Visit Our Headquarters</h6>
+							<p>GEMPC Building, Timog Avenue, Quezon City</p>
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.408705798068!2d121.04133731457596!3d14.632726180212146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7afde2b9707%3A0x4c1ece4a6ee15586!2sGempc+Building!5e0!3m2!1sen!2sph!4v1537332867663" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer2">
+					<small>&copy; 2018 &middot; Abigail S. Dominguez</small>
+				</div>	
+			</section>
+		</footer>
+	</div>
+</body>
+</html>

@@ -111,6 +111,11 @@ body {
 	font-size: .8em;
 }
 
+#three .modal-content {
+	padding: 0 30px;
+	font-size: .8em;
+}
+
 /*end of cards*/
 
 

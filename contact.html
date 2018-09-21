@@ -51,22 +51,22 @@
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./recipes.html" role="button" aria-haspopup="true" aria-expanded="false">Recipes</a>
-							<div class="dropdown-menu">
+							<div class="dropdown-menu" data-toggle="collapse">
 								<a class="dropdown-item" href="./recipes.html">View All Recipes</a>
-								<a class="dropdown-item" href="./recipes.html#beefsukiyaki">Beef Sukiyaki</a>
-								<a class="dropdown-item" href="./recipes.html#broiledsalmon">Broiled Salmon</a>
-								<a class="dropdown-item" href="./recipes.html#chickenteriyaki">Chicken Teriyaki</a>
-								<a class="dropdown-item" href="./recipes.html#misosoup">Miso Soup</a>
-								<a class="dropdown-item" href="./recipes.html#onigiri">Onigiri</a>
-								<a class="dropdown-item" href="./recipes.html#ramen">Ramen</a>
-								<a class="dropdown-item" href="./recipes.html#sushi">Sushi</a>
-								<a class="dropdown-item" href="./recipes.html#sweetmochi">Sweet Peanut Mochi</a>
-								<a class="dropdown-item" href="./recipes.html#yakisoba">Yakisoba</a>
-								<a class="dropdown-item" href="./recipes.html#yakitori">Yakitori</a>	
+								<a class="dropdown-item" href="./recipes.html#recipe-one">Beef Sukiyaki</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-two">Broiled Salmon</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-three">Chicken Teriyaki</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-four">Miso Soup</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-five">Onigiri</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-six">Ramen</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-seven">Sushi</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-eight">Unagi Stick</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-nine">Yakisoba</a>
+								<a class="dropdown-item" href="./recipes.html#recipe-ten">Yakitori</a>	
 							</div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./contact.html">Contact</a>
+							<a class="nav-link active" href="./contact.html">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -156,8 +156,23 @@
 							<p>Ask us anything!</p>
 							<textarea placeholder="Type a message here"></textarea>
 						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<a href="#recipeModal" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#recipeModal">Submit</a>
 					</form>
+					<div class="modal fade" id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalLabel" aria-hidden="true">
+  						<div class="modal-dialog" role="document">
+    						<div class="modal-content">
+      							<div class="modal-header">
+	        						<h5 class="modal-title" id="recipeModalLabel">Success!</h5>
+	       							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          						<span aria-hidden="true">&times;</span>
+	        						</button>
+      							</div>
+      							<div class="modal-body">
+        							We have received your message. Please wait for our response.
+      							</div>
+							</div>
+						</div>
+					</div>
 					<a class="backtotop" href="#one">Back to Top</a>
 				</div>
 			</section>
@@ -184,8 +199,23 @@
 							<input type="date" id="date" class="form-control">
 							<input type="time" id="time" class="form-control">
 						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<a href="#partnerModal" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#partnerModal">Submit</a>
 					</form>
+					<div class="modal fade" id="partnerModal" tabindex="-1" role="dialog" aria-labelledby="partnerModalLabel" aria-hidden="true">
+  						<div class="modal-dialog" role="document">
+    						<div class="modal-content">
+      							<div class="modal-header">
+	        						<h5 class="modal-title" id="partnerModalLabel">Success!</h5>
+	       							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          						<span aria-hidden="true">&times;</span>
+	        						</button>
+      							</div>
+      							<div class="modal-body">
+        							Please wait for the confirmation email of our appointment.
+      							</div>
+							</div>
+						</div>
+					</div>
 					<a class="backtotop" href="#one">Back to Top</a>
 				</div>
 			</section>
@@ -211,8 +241,23 @@
 							<p>Type a message and we'll respond in a flash!</p>
 							<textarea placeholder="Type a message here"></textarea>
 						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<a href="#supportModal" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#supportModal">Submit</a>
 					</form>
+					<div class="modal fade" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="supportModalLabel" aria-hidden="true">
+  						<div class="modal-dialog" role="document">
+    						<div class="modal-content">
+      							<div class="modal-header">
+	        						<h5 class="modal-title" id="supportModalLabel">Success!</h5>
+	       							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          						<span aria-hidden="true">&times;</span>
+	        						</button>
+      							</div>
+      							<div class="modal-body">
+        							We have received your message. Please wait for customer support to call you.
+      							</div>
+							</div>
+						</div>
+					</div>
 					<a class="backtotop" href="#one">Back to Top</a>
 				</div>
 			</section>

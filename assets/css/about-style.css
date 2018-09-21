@@ -119,6 +119,10 @@ body {
 	transform: rotateY(180deg);
 }
 
+#two p {
+	font-size: .9em;
+}
+
 
 /*@media only screen and (max-width: 480px) {
 	#two .row-two .col-sm-12 img {

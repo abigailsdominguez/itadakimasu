@@ -92,18 +92,26 @@ body {
 	border: none;
 	margin: 10px;
 }
-/*end of recipes section*/
 
+#two .btn {
+	background-color: #f2f2f2;
+	border: none;
+	color: #390303;
+}
 
-/*all recipes section*/
+#two .btn:hover {
+	background-color: #390303;
+	border: none;
+	color: #f2f2f2;
+}
 
-#three .all-recipes {
-	padding: 50px 20px 20px 20px;
-	list-style: inside;
+#two .modal-content {
+	padding: 0 30px;
 	font-size: .8em;
 }
 
-/*end of all recipes section*/
+/*end of recipes section*/
+
 
 
 /*footer1*/
