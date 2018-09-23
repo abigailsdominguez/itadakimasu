@@ -24,9 +24,7 @@ body {
 }
 
 .navbar .navbar-brand:hover {
-	transform: rotate(360deg);
-	transition-duration: .5s;
-	color: #390303;
+	color: #CA98A7;
 }
 
 .navbar .collapse .navbar-nav .nav-item .nav-link {
@@ -126,6 +124,7 @@ body {
 
 #three .container hr {
 	background-color: pink;
+	opacity: .4;
 }
 
 #three .fab {
@@ -148,6 +147,10 @@ body {
 #three .container .row #emaillink:hover {
 	text-decoration: none;
 	color: pink;
+}
+
+#three .container .embed-responsive iframe {
+	padding: 0 30px;
 }
 
 /*end of contact details*/
@@ -173,30 +176,30 @@ body {
 }
 
 #recipe .btn {
-	background-color: #680505;
+	background-color: darkred;
 	border: none;
 	color: #f2f2f2;
 	margin-bottom: 10px;
+	text-decoration: none;
 }
 
 #recipe .btn:hover {
 	background-color: #f2f2f2;
 	border: none;
 	color: #680505;
+	text-decoration: none;
 }
 
 #recipe .recipe .backtotop {
 	text-decoration: none;
 	color: #141414;
-	font-size: .8em;
-	padding-left: 20px;
+	text-align: right;
+	display: block;
 }
 
 #recipe .recipe .backtotop:hover {
 	text-decoration: none;
 	color: indianred;
-	font-size: .8em;
-	padding-left: 20px;
 }
 /*end of recipe section*/
 
@@ -236,16 +239,14 @@ body {
 
 #partner .partner .backtotop {
 	text-decoration: none;
-	color: #141414;
-	font-size: .8em;
-	padding-left: 20px;
+	color: indianred;
+	text-align: right;
+	display: block;
 }
 
 #partner .partner .backtotop:hover {
 	text-decoration: none;
-	color: #f2f2f2;
-	font-size: .8em;
-	padding-left: 20px;
+	color: #141414;
 }
 
 #partnerModal {
@@ -291,15 +292,13 @@ body {
 #support .support .backtotop {
 	text-decoration: none;
 	color: #141414;
-	font-size: .8em;
-	padding-left: 20px;
+	text-align: right;
+	display: block;
 }
 
 #support .support .backtotop:hover {
 	text-decoration: none;
 	color: indianred;
-	font-size: .8em;
-	padding-left: 20px;
 }
 /*end of support section*/
 
@@ -354,6 +353,16 @@ body {
 .col2 .fab:hover {
 	color: #9D9C9A;
 }
+
+.footer .row .col2 .disclaimer {
+	font-size: .9em;
+	margin-top: 30px;
+}
+
+#four .footer .embed-responsive iframe {
+	padding: 0 30px 20px 30px;
+}	
+
 /*end of footer1*/
 
 /*footer2*/
