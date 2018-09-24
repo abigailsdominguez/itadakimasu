@@ -16,18 +16,13 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
 
 	<link rel="stylesheet" type="text/css" href="./assets/css/recipes-style.css">
-
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-	<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
 	
 	<link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.png">
 
 	<title>Itadakimasu</title>
 </head>
 <body>
+	<a id="backtotop" class="animated">Back to Top</a>
 	<div class="container-fluid px-0">
 		<section id="top"></section>
 		<header id="one">
@@ -36,7 +31,7 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarContent">
+				<div class="collapse navbar-collapse text-center" id="navbarContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
 							<a class="nav-link" href="./home.html">Home</a>
@@ -50,8 +45,8 @@
 						<li class="nav-item">
 							<a class="nav-link" href="./gallery.html">Gallery</a>
 						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="./recipes.html">Recipes</a>
+						<li class="nav-item">
+							<a class="nav-link active" id="active" href="./recipes.html">Recipes</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="./contact.html">Contact</a>
@@ -65,16 +60,16 @@
 				<h1>Recipes</h1>
 				<div class="container">
 					<div class="row row1">
-						<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<div class="card bg-dark text-white" id="recipe-one">
-								<img class="card-img" src="./assets/img/landing4.jpg" alt="Beef Sukiyaki" title="&copy; Mae Bunao">
+								<img class="card-img" src="./assets/img/25.jpg" alt="Beef Sukiyaki" title="&copy; Mae Bunao">
 								<div class="card-img-overlay">
 									<h5 class="card-title">Beef Sukiyaki</h5>
 									<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#sukiyakiModal">View recipe</a>
 								</div>
 							</div>
 							<div class="modal fade animated zoomIn animated zoomIn" id="sukiyakiModal" tabindex="-1" role="dialog" aria-labelledby="sukiyakiModalLabel" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
+  								<div class="modal-dialog modal-dialog-centered" role="document">
     								<div class="modal-content">
       									<div class="modal-header">
 	        								<h5 class="modal-title" id="sukiyakiModalLabel">Beef Sukiyaki</h5>
@@ -111,7 +106,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<div class="card bg-dark text-white" id="recipe-two">
 								<img class="card-img" src="./assets/img/broiledsalmon.jpg" alt="Broiled Salmon" title="&copy; boisdejasmin.com">
 								<div class="card-img-overlay">
@@ -120,7 +115,7 @@
 								</div>
 							</div>
 							<div class="modal fade animated zoomIn animated zoomIn" id="broiledSalmonModal" tabindex="-1" role="dialog" aria-labelledby="broiledSalmonModalLabel" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
+  								<div class="modal-dialog modal-dialog-centered" role="document">
     								<div class="modal-content">
       									<div class="modal-header">
 	        								<h5 class="modal-title" id="broiledSalmonModalLabel">Broiled Salmon</h5>
@@ -154,7 +149,7 @@
 				</div>
 				<div class="container">
 					<div class="row row2">
-						<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<div class="card bg-dark text-white" id="recipe-three">
 								<img class="card-img" src="./assets/img/chickenteriyaki.jpg" alt="Chicken Teriyaki" title="&copy; cooking.nytimes.com">
 								<div class="card-img-overlay">
@@ -163,7 +158,7 @@
 								</div>
 							</div>
 							<div class="modal fade animated zoomIn animated zoomIn" id="teriyakiModal" tabindex="-1" role="dialog" aria-labelledby="teriyakiModalLabel" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
+  								<div class="modal-dialog modal-dialog-centered" role="document">
     								<div class="modal-content">
       									<div class="modal-header">
 	        								<h5 class="modal-title" id="teriyakiModalLabel">Chicken Teriyaki</h5>
@@ -193,7 +188,7 @@
 							</div>
 
 						</div>
-						<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<div class="card bg-dark text-white" id="recipe-four">
 								<img class="card-img" src="./assets/img/miso.jpg" alt="Miso Soup" title="&copy; rouxbe.com">
 								<div class="card-img-overlay">
@@ -202,7 +197,7 @@
 								</div>
 							</div>
 							<div class="modal fade animated zoomIn animated zoomIn" id="misoModal" tabindex="-1" role="dialog" aria-labelledby="misoModalLabel" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
+  								<div class="modal-dialog modal-dialog-centered" role="document">
     								<div class="modal-content">
       									<div class="modal-header">
 	        								<h5 class="modal-title" id="misoModalLabel">Miso Soup</h5>
@@ -237,7 +232,7 @@
 
 				<div class="container">
 					<div class="row row3">
-						<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<div class="card bg-dark text-black" id="recipe-five">
 								<img class="card-img" src="./assets/img/onigiri.jpg" alt="Onigiri" title="&copy; Mae Bunao">
 								<div class="card-img-overlay">
@@ -246,7 +241,7 @@
 								</div>
 							</div>
 							<div class="modal fade animated zoomIn animated zoomIn" id="onigiriModal" tabindex="-1" role="dialog" aria-labelledby="onigiriModalLabel" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
+  								<div class="modal-dialog modal-dialog-centered" role="document">
     								<div class="modal-content">
       									<div class="modal-header">
 	        								<h5 class="modal-title" id="onigiriModalLabel">Onigiri</h5>
@@ -278,7 +273,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<div class="card bg-dark text-white" id="recipe-six">
 								<img class="card-img" src="./assets/img/ramen.jpg" alt="Ramen" title="&copy; Mae Bunao">
 								<div class="card-img-overlay">
@@ -287,7 +282,7 @@
 								</div>
 							</div>
 							<div class="modal fade animated zoomIn animated zoomIn" id="ramenModal" tabindex="-1" role="dialog" aria-labelledby="ramenModalLabel" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
+  								<div class="modal-dialog modal-dialog-centered" role="document">
     								<div class="modal-content">
       									<div class="modal-header">
 	        								<h5 class="modal-title" id="ramenModalLabel">Ramen</h5>
@@ -324,7 +319,7 @@
 
 				<div class="container">
 					<div class="row row4">
-						<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<div class="card bg-dark text-white" id="recipe-seven">
 								<img class="card-img" src="./assets/img/sushi.jpg" alt="Sushi" title="&copy; Mae Bunao">
 								<div class="card-img-overlay">
@@ -333,7 +328,7 @@
 								</div>
 							</div>
 							<div class="modal fade animated zoomIn animated zoomIn" id="sushiModal" tabindex="-1" role="dialog" aria-labelledby="sushiModalLabel" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
+  								<div class="modal-dialog modal-dialog-centered" role="document">
     								<div class="modal-content">
       									<div class="modal-header">
 	        								<h5 class="modal-title" id="sushiModalLabel">Sushi</h5>
@@ -367,7 +362,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<div class="card bg-dark text-black" id="recipe-eight">
 								<img class="card-img" src="./assets/img/unagi.jpg" alt="Unagi Stick" title="&copy; Mae Bunao">
 								<div class="card-img-overlay">
@@ -376,7 +371,7 @@
 								</div>
 							</div>
 							<div class="modal fade animated zoomIn animated zoomIn" id="unagiModal" tabindex="-1" role="dialog" aria-labelledby="unagiModalLabel" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
+  								<div class="modal-dialog modal-dialog-centered" role="document">
     								<div class="modal-content">
       									<div class="modal-header">
 	        								<h5 class="modal-title" id="unagiModalLabel">Unagi Stick</h5>
@@ -416,7 +411,7 @@
 
 				<div class="container">
 					<div class="row row5">
-						<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<div class="card bg-dark text-black" id="recipe-nine">
 								<img class="card-img" src="./assets/img/yakisoba.jpg" alt="Yakisoba" title="&copy; savorflavorasia.com">
 								<div class="card-img-overlay">
@@ -425,7 +420,7 @@
 								</div>
 							</div>
 							<div class="modal fade animated zoomIn animated zoomIn" id="yakisobaModal" tabindex="-1" role="dialog" aria-labelledby="yakisobaModalLabel" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
+  								<div class="modal-dialog modal-dialog-centered" role="document">
     								<div class="modal-content">
       									<div class="modal-header">
 	        								<h5 class="modal-title" id="yakisobaModalLabel">Yakisoba</h5>
@@ -465,7 +460,7 @@
 							</div>
 
 						</div>
-						<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<div class="card bg-dark text-black" id="recipe-ten">
 								<img class="card-img" src="./assets/img/yakitori.jpg" alt="Yakitori" title="&copy; straight.com">
 								<div class="card-img-overlay">
@@ -474,7 +469,7 @@
 								</div>
 							</div>
 							<div class="modal fade animated zoomIn animated zoomIn" id="yakitoriModal" tabindex="-1" role="dialog" aria-labelledby="yakitoriModalLabel" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
+  								<div class="modal-dialog modal-dialog-centered" role="document">
     								<div class="modal-content">
       									<div class="modal-header">
 	        								<h5 class="modal-title" id="yakitoriModalLabel">Yakitori</h5>
@@ -510,7 +505,6 @@
 					</div>
 				</div>
 				<hr>
-				<a class="backtotop" href="#one">Back to Top</a>
 			</section>
 			<!-- <section id="three">
 
@@ -528,9 +522,9 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-12 col2">
 							<h6>Visit Our Social Media Accounts</h6>
-							<a href=""><i class="fab fa-facebook" title="Visit our Facebook Profile"></i></a>
-							<a href=""><i class="fab fa-instagram" title="Visit our Instagram Account"></i></a>
-							<a href=""><i class="fab fa-twitter-square" title="Visit our Twitter Account"></i></a>
+							<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" title="Visit our Facebook Profile"></i></a>
+							<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" title="Visit our Instagram Account"></i></a>
+							<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square" title="Visit our Twitter Account"></i></a>
 							<div>
 								<p class="disclaimer">Disclaimer: No copyright infringement intended, we do not own the content nor we take credit for it, we are not selling the website or making profits from it and it is used only for educational purposes. Photos taken by Mae Bunao.</p>
 							</div>
@@ -550,5 +544,12 @@
 			</section>
 		</footer>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+
+	<script src="./assets/js/home.js"></script>
 </body>
 </html>

@@ -9,6 +9,21 @@ body {
 	background-color: #f2f2f2;
 }
 
+#backtotop {
+	position: fixed;
+	bottom: 10px;
+	color: #f2f2f2;
+	background-color: #680505;
+	cursor: pointer;
+	right: 20px;
+	z-index: 1;
+	display: none;
+	padding: 10px;
+	border-radius: 10px;
+	opacity: .9;
+}
+
+
 /*navbar*/
 .navbar {
 	background-color: transparent !important;
@@ -49,10 +64,6 @@ body {
 	color: #f2f2f2;
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item {
-	margin-right: 20px;
-}
-
 .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
 	background-color: #680505;
 }
@@ -73,6 +84,16 @@ body {
 	background-color: #680505;;
 	opacity: .9;
 }
+
+.navbar #active {
+	color: black;
+}
+
+.navbar #active:hover {
+	background-color: #680505;
+	text-decoration: none;
+}
+
 /*end of navbar*/
 
 /*gallery photos section*/
@@ -118,6 +139,18 @@ body {
 	border: none;
 }
 
+#two .modal .modal-dialog {
+	color: #680505;
+}
+
+#two .modal .modal-dialog .modal-header span {
+	color: #680505;
+}
+
+#two .modal .modal-dialog .modal-header span:hover {
+	color: #141414;
+}
+
 /*end of gallery photos section*/
 
 /*coffee photos*/
@@ -157,6 +190,19 @@ body {
 	color: #f2f2f2;
 	border: none;
 }
+
+#three .modal .modal-dialog {
+	color: #680505;
+}
+
+#three .modal .modal-dialog .modal-header span {
+	color: #680505;
+}
+
+#three .modal .modal-dialog .modal-header span:hover {
+	color: #141414;
+}
+
 /*end of coffee photos*/
 
 
@@ -226,3 +272,54 @@ body {
 	text-align: center;
 }
 /*end of footer2*/
+
+@media only screen and (max-width: 450px) {
+	main {
+		font-size: 90%;
+	}
+
+	h1 {
+		font-size: 1.3em;
+	}
+
+	h3 {
+		font-size: 1.1em;
+	}
+
+	.fixed-top {
+		left: 1%;
+		right: 5%;
+	}
+
+	.modal {
+		left: 1%;
+		right: 5%;
+	}
+
+	#backtotop {
+		font-size: .7em;
+	}
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+	main {
+		font-size: 80%;
+	}
+
+	h1 {
+		font-size: 2.2em;
+	}
+
+	h3 {
+		font-size: 1.8em;
+	}
+
+	.fixed-top {
+		left: 3%;
+		right: 5%;
+	}
+
+	#backtotop {
+		font-size: .8em;
+	}
+}

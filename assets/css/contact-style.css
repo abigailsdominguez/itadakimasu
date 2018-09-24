@@ -8,6 +8,20 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
+#backtotop {
+	position: fixed;
+	bottom: 10px;
+	color: #f2f2f2;
+	background-color: #680505;
+	cursor: pointer;
+	right: 20px;
+	z-index: 1;
+	display: none;
+	padding: 10px;
+	border-radius: 10px;
+	opacity: .9;
+}
+
 /*navbar*/
 .navbar {
 	background-color: transparent !important;
@@ -48,10 +62,6 @@ body {
 	color: #f2f2f2;
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item {
-	margin-right: 20px;
-}
-
 .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
 	background-color: #680505;
 }
@@ -72,6 +82,16 @@ body {
 	background-color: #680505;;
 	opacity: .9;
 }
+
+.navbar #active {
+	color: black;
+}
+
+.navbar #active:hover {
+	background-color: #680505;
+	text-decoration: none;
+}
+
 /*end of navbar*/
 
 /*purpose section*/
@@ -176,7 +196,7 @@ body {
 }
 
 #recipe .btn {
-	background-color: darkred;
+	background-color: #680505;
 	border: none;
 	color: #f2f2f2;
 	margin-bottom: 10px;
@@ -193,13 +213,25 @@ body {
 #recipe .recipe .backtotop {
 	text-decoration: none;
 	color: #141414;
-	text-align: right;
-	display: block;
+	margin: 20px 0 0 20px;
+	font-size: .9em;
 }
 
 #recipe .recipe .backtotop:hover {
 	text-decoration: none;
 	color: indianred;
+}
+
+#recipe .modal .modal-dialog {
+	color: #680505;
+}
+
+#recipe .modal .modal-dialog .modal-header span {
+	color: #680505;
+}
+
+#recipe .modal .modal-dialog .modal-header span:hover {
+	color: #141414;
 }
 /*end of recipe section*/
 
@@ -240,8 +272,8 @@ body {
 #partner .partner .backtotop {
 	text-decoration: none;
 	color: indianred;
-	text-align: right;
-	display: block;
+	margin: 20px 0 0 20px;
+	font-size: .9em;
 }
 
 #partner .partner .backtotop:hover {
@@ -251,6 +283,18 @@ body {
 
 #partnerModal {
 	color: #680505;
+}
+
+#partner .modal .modal-dialog {
+	color: #680505;
+}
+
+#partner .modal .modal-dialog .modal-header span {
+	color: #680505;
+}
+
+#partner .modal .modal-dialog .modal-header span:hover {
+	color: #141414;
 }
 
 
@@ -292,14 +336,27 @@ body {
 #support .support .backtotop {
 	text-decoration: none;
 	color: #141414;
-	text-align: right;
-	display: block;
+	margin: 20px 0 0 20px;
+	font-size: .9em;
 }
 
 #support .support .backtotop:hover {
 	text-decoration: none;
 	color: indianred;
 }
+
+#support .modal .modal-dialog {
+	color: #680505;
+}
+
+#support .modal .modal-dialog .modal-header span {
+	color: #680505;
+}
+
+#support .modal .modal-dialog .modal-header span:hover {
+	color: #141414;
+}
+
 /*end of support section*/
 
 
@@ -374,3 +431,46 @@ body {
 	text-align: center;
 }
 /*end of footer2*/
+
+@media only screen and (max-width: 450px) {
+	main {
+		font-size: 90%;
+	}
+
+	h1 {
+		font-size: 1.3em;
+	}
+
+	.fixed-top {
+		left: 1%;
+		right: 5%;
+	}
+
+	.modal {
+		left: 1%;
+		right: 5%;
+	}
+
+	#backtotop {
+		font-size: .7em;
+	}
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+	main {
+		font-size: 80%;
+	}
+
+	h1 {
+		font-size: 2.2em;
+	}
+
+	.fixed-top {
+		left: 3%;
+		right: 5%;
+	}
+
+	#backtotop {
+		font-size: .8em;
+	}
+}

@@ -16,18 +16,13 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
 
 	<link rel="stylesheet" type="text/css" href="./assets/css/history-style.css">
-
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-	<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
 	
 	<link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.png">
 
 	<title>Itadakimasu</title>
 </head>
 <body>
+	<a id="backtotop" class="animated">Back to Top</a>
 	<div class="container-fluid px-0">
 		<header id="one">
 			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -35,16 +30,16 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarContent">
+				<div class="collapse navbar-collapse text-center" id="navbarContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a class="nav-link active" href="./home.html">Home</a>
+							<a class="nav-link" href="./home.html">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="./about.html">About</a>
 						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="./history.html">History</a>
+						<li class="nav-item">
+							<a class="nav-link active" id="active" href="./history.html">History</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="./gallery.html">Gallery</a>
@@ -63,30 +58,29 @@
 			<section id="two">
 				<h1>History</h1>
 				<div class="row row-one">
-					<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="col-lg-6 col-md-6 col-sm-12 p-mid">
 						<p>The history of Japanese cuisine is very much a large part of the Japanese culture, and an integral part of the Japanese people’s lives. Through the years, it has developed unique characteristics and has become well-known in most parts of the world. Over the recent years, more and more Japanese restaurants have proliferated.</p>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 red">
-						
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<img class="img-fluid" src="./assets/img/japresto.jpg" title="&copy; wordpress.tokyotimes.org">
 					</div>
 				</div>
 				<div class="row row-two">
-					<div class="col-lg-6 col-md-6 col-sm-12 red">
-						
-					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12">
+						<img class="img-fluid" src="./assets/img/neolithic.jpg" title="&copy; ancient-origins.net">
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 p-mid">
 						<p>Many of Japan’s cultural and even culinary traditions came from China and Korea. The most important of these is rice, which only arrived in Japan at the end of the Neolithic Period, about 2,400 years ago, with immigrants that came from the mainland.</p>
 					</div>
 				</div>
 				<div class="row row-three">
-					<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="col-lg-6 col-md-6 col-sm-12 p-mid">
 						<p>Before that, in the Jomon Era, the Japanese were still hunters and gatherers. The original inhabitants or <em>Ainu</em> were Caucasian. Asiatic people came later from the continent and they brought with them rice and metal tools; and then suddenly, like everywhere else, the population rose.</p>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 red">
-						
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<img class="img-fluid" src="./assets/img/ainu.JPG" title="&copy; wikipedia.org/wiki/Ainu_people">
 					</div>
 				</div>
-				<a class="backtotop" href="#one">Back to Top</a>
 			</section>
 
 			<section id="three">
@@ -94,15 +88,15 @@
 				<div class="container-card">
 					<div class="card-deck">
 						<div class="card">
-						<img class="card-img-top img-fluid" src="./assets/img/staple1.jpg" alt="staple1" title="&copy; Mae Bunao">
-						<div class="card-body">
+						<img class="card-img-top img-fluid" src="./assets/img/staple1.jpg" alt="staple1" title="&copy; seriouseats.com">
+						<div class="card-body d-flex flex-column">
 							<h5 class="card-title">Rice and Noodles</h5>
 							<p class="card-text">The variety of rice introduced was short-grained, sticky, and it is somewhat sweet. To this day, the Japanese don’t really...</p>
-							<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#staple1Modal">See more</a>
+							<a type="button" class="btn btn-sm btn-light mt-auto" data-toggle="modal" data-target="#staple1Modal">See more</a>
 						</div>
 					</div>
 					<div class="modal fade animated zoomIn animated zoomIn" id="staple1Modal" tabindex="-1" role="dialog" aria-labelledby="staple1ModalLabel" aria-hidden="true">
-  						<div class="modal-dialog" role="document">
+  						<div class="modal-dialog modal-dialog-centered" role="document">
     						<div class="modal-content">
       							<div class="modal-header">
 	        						<h5 class="modal-title" id="staple1ModalLabel">Rice and Noodles</h5>
@@ -119,15 +113,15 @@
 						</div>
 					</div>
 					<div class="card">
-						<img class="card-img-top img-fluid" src="./assets/img/staple2.jpg" alt="sushi stick" title="&copy; Mae Bunao">
-						<div class="card-body">
+						<img class="card-img-top img-fluid" src="./assets/img/32.jpg" alt="sushi stick" title="&copy; Mae Bunao">
+						<div class="card-body d-flex flex-column">
 							<h5 class="card-title">Fish Dishes</h5>
 							<p class="card-text">This entire cuisine was based on fish. Only strict Buddhist monks avoided fish. Here, the topography works perfectly to their advantage. Japan is...</p>
-							<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#staple2Modal">See more</a>
+							<a type="button" class="btn btn-sm btn-light mt-auto" data-toggle="modal" data-target="#staple2Modal">See more</a>
 						</div>
 					</div>
 					<div class="modal fade animated zoomIn animated zoomIn" id="staple2Modal" tabindex="-1" role="dialog" aria-labelledby="staple2ModalLabel" aria-hidden="true">
-  						<div class="modal-dialog" role="document">
+  						<div class="modal-dialog modal-dialog-centered" role="document">
     						<div class="modal-content">
       							<div class="modal-header">
 		        					<h5 class="modal-title" id="staple2ModalLabel">Fish Dishes</h5>
@@ -147,15 +141,15 @@
 					</div>
 
 					<div class="card">
-						<img class="card-img-top img-fluid" src="./assets/img/32.jpg" alt="staple3" title="&copy; Mae Bunao">
-						<div class="card-body">
+						<img class="card-img-top img-fluid" src="./assets/img/staple3.jpg" alt="staple3" title="&copy; japancentre.com">
+						<div class="card-body d-flex flex-column">
 							<h5 class="card-title">Staples: Daikon, Miso, etc.</h5>
 							<p class="card-text">There are a slew of vegetables: Daikon radish is probably the one most familiar to you, cut into impossibly thin sticks. If you’ve...</p>
-							<a type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#staple3Modal">See more</a>
+							<a type="button" class="btn btn-sm btn-light mt-auto" data-toggle="modal" data-target="#staple3Modal">See more</a>
 						</div>
 					</div>
 					<div class="modal fade animated zoomIn animated zoomIn" id="staple3Modal" tabindex="-1" role="dialog" aria-labelledby="staple3ModalLabel" aria-hidden="true">
-  						<div class="modal-dialog" role="document">
+  						<div class="modal-dialog modal-dialog-centered" role="document">
     						<div class="modal-content">
       							<div class="modal-header">
 	        						<h5 class="modal-title" id="staple3ModalLabel">Staples: Daikon, Miso, etc.</h5>
@@ -174,7 +168,6 @@
 						</div>
 					</div>
 				</div>
-				
 			</section>
 
 		</main>
@@ -190,9 +183,9 @@
 						</div>
 						<div class="col-lg-4 col-md-12 col-sm-12 col2">
 							<h6>Visit Our Social Media Accounts</h6>
-							<a href=""><i class="fab fa-facebook" title="Visit our Facebook Profile"></i></a>
-							<a href=""><i class="fab fa-instagram" title="Visit our Instagram Account"></i></a>
-							<a href=""><i class="fab fa-twitter-square" title="Visit our Twitter Account"></i></a>
+							<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" title="Visit our Facebook Profile"></i></a>
+							<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" title="Visit our Instagram Account"></i></a>
+							<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square" title="Visit our Twitter Account"></i></a>
 							<div>
 								<p class="disclaimer">Disclaimer: No copyright infringement intended, we do not own the content nor we take credit for it, we are not selling the website or making profits from it and it is used only for educational purposes. Photos taken by Mae Bunao.</p>
 							</div>
@@ -212,5 +205,12 @@
 			</section>
 		</footer>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+
+	<script src="./assets/js/home.js"></script>
 </body>
 </html>

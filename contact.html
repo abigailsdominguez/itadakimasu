@@ -16,18 +16,13 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
 
 	<link rel="stylesheet" type="text/css" href="./assets/css/contact-style.css">
-
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-	<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
 	
 	<link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.png">
 
 	<title>Itadakimasu</title>
 </head>
 <body>
+	<a id="backtotop" class="animated">Back to Top</a>
 	<div class="container-fluid px-0">
 		<header id="one">
 			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -35,10 +30,10 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarContent">
+				<div class="collapse navbar-collapse text-center" id="navbarContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a class="nav-link active" href="./home.html">Home</a>
+							<a class="nav-link" href="./home.html">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="./about.html">About</a>
@@ -52,8 +47,8 @@
 						<li class="nav-item">
 							<a class="nav-link" href="./recipes.html">Recipes</a>
 						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="./contact.html">Contact</a>
+						<li class="nav-item">
+							<a class="nav-link active" id="active" href="./contact.html">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -106,9 +101,9 @@
 							<br>
 							<h6>Visit Our Social Media Accounts</h6>
 							<hr>
-							<a href=""><i class="fab fa-facebook" title="Visit our Facebook Profile"></i></a>
-							<a href=""><i class="fab fa-instagram" title="Visit our Instagram Account"></i></a>
-							<a href=""><i class="fab fa-twitter-square" title="Visit our Twitter Account"></i></a>
+							<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" title="Visit our Facebook Profile"></i></a>
+							<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" title="Visit our Instagram Account"></i></a>
+							<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square" title="Visit our Twitter Account"></i></a>
 						</div>
 						<div class="col-lg-6 col-md-12 col-sm-12">
 							<h6>Our Headquarters</h6>
@@ -146,7 +141,7 @@
 						<a href="#recipeModal" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#recipeModal">Submit</a>
 					</form>
 					<div class="modal fade" id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalLabel" aria-hidden="true">
-  						<div class="modal-dialog" role="document">
+  						<div class="modal-dialog modal-dialog-centered" role="document">
     						<div class="modal-content">
       							<div class="modal-header">
 	        						<h5 class="modal-title" id="recipeModalLabel">Success!</h5>
@@ -160,7 +155,6 @@
 							</div>
 						</div>
 					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
 				</div>
 			</section>
 
@@ -189,7 +183,7 @@
 						<a href="#partnerModal" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#partnerModal">Submit</a>
 					</form>
 					<div class="modal fade" id="partnerModal" tabindex="-1" role="dialog" aria-labelledby="partnerModalLabel" aria-hidden="true">
-  						<div class="modal-dialog" role="document">
+  						<div class="modal-dialog modal-dialog-centered" role="document">
     						<div class="modal-content">
       							<div class="modal-header">
 	        						<h5 class="modal-title" id="partnerModalLabel">Success!</h5>
@@ -203,7 +197,6 @@
 							</div>
 						</div>
 					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
 				</div>
 			</section>
 
@@ -231,7 +224,7 @@
 						<a href="#supportModal" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#supportModal">Submit</a>
 					</form>
 					<div class="modal fade" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="supportModalLabel" aria-hidden="true">
-  						<div class="modal-dialog" role="document">
+  						<div class="modal-dialog modal-dialog-centered" role="document">
     						<div class="modal-content">
       							<div class="modal-header">
 	        						<h5 class="modal-title" id="supportModalLabel">Success!</h5>
@@ -245,7 +238,6 @@
 							</div>
 						</div>
 					</div>
-					<a class="backtotop" href="#one">Back to Top</a>
 				</div>
 			</section>
 
@@ -262,9 +254,9 @@
 						</div>
 						<div class="col-lg-4 col-md-12 col-sm-12 col2">
 							<h6>Visit Our Social Media Accounts</h6>
-							<a href=""><i class="fab fa-facebook" title="Visit our Facebook Profile"></i></a>
-							<a href=""><i class="fab fa-instagram" title="Visit our Instagram Account"></i></a>
-							<a href=""><i class="fab fa-twitter-square" title="Visit our Twitter Account"></i></a>
+							<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" title="Visit our Facebook Profile"></i></a>
+							<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" title="Visit our Instagram Account"></i></a>
+							<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square" title="Visit our Twitter Account"></i></a>
 							<div>
 								<p class="disclaimer">Disclaimer: No copyright infringement intended, we do not own the content nor we take credit for it, we are not selling the website or making profits from it and it is used only for educational purposes. Photos taken by Mae Bunao.</p>
 							</div>
@@ -284,5 +276,12 @@
 			</section>
 		</footer>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+
+	<script src="./assets/js/home.js"></script>
 </body>
 </html>

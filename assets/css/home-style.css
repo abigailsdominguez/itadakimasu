@@ -1,4 +1,4 @@
-* {
+html, * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -6,6 +6,20 @@
 
 body {
 	font-family: 'Quicksand', sans-serif;
+}
+
+#backtotop {
+	position: fixed;
+	bottom: 10px;
+	color: #f2f2f2;
+	background-color: #680505;
+	cursor: pointer;
+	right: 20px;
+	z-index: 1;
+	display: none;
+	padding: 10px;
+	border-radius: 10px;
+	opacity: .9;
 }
 
 /*navbar*/
@@ -46,10 +60,6 @@ body {
 	color: #f2f2f2;
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item {
-	margin-right: 20px;
-}
-
 .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
 	background-color: #680505;
 }
@@ -70,6 +80,19 @@ body {
 	background-color: #680505;
 	opacity: .8;
 }
+
+.navbar #active {
+	color: black;
+}
+
+.navbar #active:hover {
+	text-decoration: none;
+	background-color: #680505;
+}
+
+
+
+
 /*end of navbar*/
 
 /*carousel*/
@@ -103,22 +126,18 @@ body {
 	border-radius: 1%;
 }
 
-#three .backtotop {
-	text-decoration: none;
-	color: #141414;
-	text-align: right;
-	display: block;
-	/*edit*/
-}
-
-#three .backtotop:hover {
-	text-decoration: none;
-	color: indianred;
-}
-
 #three .modal-content {
 	padding: 0 30px;
 	font-size: .8em;
+	color: #680505;
+}
+
+#three .modal .modal-dialog .modal-header span {
+	color: #680505;
+}
+
+#three .modal .modal-dialog .modal-header span:hover {
+	color: #141414;
 }
 
 /*end of cards*/
@@ -190,3 +209,43 @@ body {
 	text-align: center;
 }
 /*end of footer2*/
+
+@media only screen and (max-width: 450px) {
+	main {
+		font-size: 90%;
+	}
+
+	h3 {
+		font-size: 1.3em;
+	}
+
+	#backtotop {
+		font-size: .7em;
+	}
+
+	.fixed-top {
+		left: 1%;
+		right: 5%;
+	}
+
+	.modal {
+		left: 1%;
+		right: 5%;
+	}
+
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+	main {
+		font-size: 80%;
+	}
+
+	#backtotop {
+		font-size: .8em;
+	}
+
+	.fixed-top {
+		left: 3%;
+		right: 5%;
+	}
+}
