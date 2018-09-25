@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+html, .row {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: 'Quicksand', sans-serif;
 }
@@ -26,8 +31,6 @@ body {
 /*navbar*/
 .navbar {
 	background-color: transparent !important;
-	/*background-color: #f2f2f2 !important;*/
-	/*opacity: .8;*/
 }
 
 .navbar .navbar-brand {
@@ -92,11 +95,7 @@ body {
 	background-color: #680505;
 	text-decoration: none;
 }
-
 /*end of navbar*/
-
-/*carousel*/
-/*end of carousel*/
 
 /*about section*/
 #two {
@@ -135,12 +134,9 @@ body {
 #two img {
 	border-radius: 10px;
 }
-
-
 /*end of about section*/
 
 /*cards*/
-
 #three {
 	padding: 50px;
 }
@@ -179,8 +175,6 @@ body {
 #three .modal .modal-dialog .modal-header span:hover {
 	color: #141414;
 }
-
-
 /*end of cards*/
 
 
@@ -216,7 +210,6 @@ body {
 .footer .row .col2 .disclaimer {
 	font-size: .9em;
 	margin-top: 30px; 
-	/*edit*/
 }
 
 .footer .row .col3 p {
@@ -236,9 +229,7 @@ body {
 
 #four .footer .embed-responsive iframe {
 	padding: 0 30px 20px 30px;	
-	/*edit*/
 }
-
 /*end of footer1*/
 
 /*footer2*/
@@ -252,53 +243,64 @@ body {
 /*end of footer2*/
 
 @media only screen and (max-width: 450px) {
-	main {
-		font-size: 90%;
-	}
-
-	h1 {
-		font-size: 1.3em;
+	#two h1 {
+		font-size: 1.5em;
 	}
 
 	h4 {
+		font-size: 1.2em;
+	}
+
+	h5 {
 		font-size: 1.1em;
 	}
 
-	.fixed-top {
-		left: 1%;
-		right: 5%;
-	}
-
-	.modal {
-		left: 1%;
-		right: 5%;
+	p {
+		font-size: .8em;
 	}
 
 	#backtotop {
 		font-size: .7em;
 	}
 
+	#four .footer .disclaimer {
+		font-size: .8em;
+		margin: 10px 20px 5px;
+	}
+
+	#four .footer [class*=col] {
+		border: 1px solid #390303;
+	}
+
 }
 
 @media only screen and (min-width: 451px) and (max-width: 768px) {
-	main {
-		font-size: 80%;
-	}
-
-	h1 {
-		font-size: 2.2em;
+	#two h1 {
+		font-size: 1.7em;
 	}
 
 	h4 {
-		font-size: 1.5em;
+		font-size: 1.4em;
 	}
 
-	.fixed-top {
-		left: 3%;
-		right: 5%;
+	h5 {
+		font-size: 1.3em;
+	}
+
+	p {
+		font-size: .9em;
 	}
 
 	#backtotop {
 		font-size: .8em;
+	}
+
+	.col2 .fab {
+		padding-top: 5px;
+	}
+
+	#four .footer .disclaimer {
+		font-size: .7em;
+		margin-top: 5px;
 	}
 }

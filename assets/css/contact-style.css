@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+html, .row {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: 'Quicksand', sans-serif;
 }
@@ -25,8 +30,6 @@ body {
 /*navbar*/
 .navbar {
 	background-color: transparent !important;
-	/*background-color: #f2f2f2 !important;*/
-	/*opacity: .8;*/
 }
 
 .navbar .navbar-brand {
@@ -91,7 +94,6 @@ body {
 	background-color: #680505;
 	text-decoration: none;
 }
-
 /*end of navbar*/
 
 /*purpose section*/
@@ -172,7 +174,6 @@ body {
 #three .container .embed-responsive iframe {
 	padding: 0 30px;
 }
-
 /*end of contact details*/
 
 
@@ -188,11 +189,12 @@ body {
 }
 
 #recipe .form-control {
-	width: 70%;
+	width: 50%;
 }
 
 #recipe textarea{
-	width: 100%;
+	width: 70%;
+	height: 100px;
 }
 
 #recipe .btn {
@@ -253,7 +255,7 @@ body {
 }
 
 #partner .form-control {
-	width: 70%;
+	width: 50%;
 }
 
 #partner .btn:hover {
@@ -296,8 +298,6 @@ body {
 #partner .modal .modal-dialog .modal-header span:hover {
 	color: #141414;
 }
-
-
 /*end of partner section*/
 
 
@@ -313,11 +313,12 @@ body {
 }
 
 #support .form-control {
-	width: 70%;
+	width: 50%;
 }
 
 #support textarea{
-	width: 100%;
+	width: 70%;
+	height: 100px;
 }
 
 #support .btn {
@@ -356,10 +357,7 @@ body {
 #support .modal .modal-dialog .modal-header span:hover {
 	color: #141414;
 }
-
 /*end of support section*/
-
-
 
 
 /*footer1*/
@@ -419,7 +417,6 @@ body {
 #four .footer .embed-responsive iframe {
 	padding: 0 30px 20px 30px;
 }	
-
 /*end of footer1*/
 
 /*footer2*/
@@ -433,44 +430,113 @@ body {
 /*end of footer2*/
 
 @media only screen and (max-width: 450px) {
-	main {
-		font-size: 90%;
-	}
-
 	h1 {
-		font-size: 1.3em;
+		font-size: 1.5em;
 	}
 
-	.fixed-top {
-		left: 1%;
-		right: 5%;
+	h4 {
+		font-size: 1.2em;
 	}
 
-	.modal {
-		left: 1%;
-		right: 5%;
+	h6 {
+		font-size: 1em;
+	}
+
+	p, label {
+		font-size: .9em;
+	}
+
+	#two {
+		padding: 70px 20px 10px 20px;
+	}
+
+	#two .container .row .col {
+		padding: 0 30px 0;
+	}
+
+	#recipe .form-control {
+	width: 100%;
+	}
+
+	#recipe textarea{
+	width: 100%;
+	}
+
+	#partner .form-control {
+	width: 100%;
+	}
+
+	#support .form-control {
+	width: 100%;
+	}
+
+	#support textarea{
+	width: 100%;
+	height: 80px;
 	}
 
 	#backtotop {
 		font-size: .7em;
 	}
+
+	#four .footer .disclaimer {
+		font-size: .8em;
+		margin: 10px 20px 5px;
+	}
+
+	#four .footer [class*=col] {
+		border: 1px solid #390303;
+	}
 }
 
 @media only screen and (min-width: 451px) and (max-width: 768px) {
-	main {
-		font-size: 80%;
-	}
-
 	h1 {
-		font-size: 2.2em;
+		font-size: 1.7em;
 	}
 
-	.fixed-top {
-		left: 3%;
-		right: 5%;
+	h4 {
+		font-size: 1.4em;
+	}
+
+	h6 {
+		font-size: 1.2em;
+	}
+
+	p, label {
+		font-size: 1em;
+	}
+
+	#recipe .form-control {
+	width: 60%;
+	}
+
+	#recipe textarea{
+	width: 80%;
+	}
+
+	#partner .form-control {
+	width: 60%;
+	}
+
+	#support .form-control {
+	width: 60%;
+	}
+
+	#support textarea{
+	width: 80%;
+	height: 100px;
 	}
 
 	#backtotop {
 		font-size: .8em;
+	}
+
+	.col2 .fab {
+		padding-top: 5px;
+	}
+
+	#four .footer .disclaimer {
+		font-size: .7em;
+		margin-top: 5px;
 	}
 }

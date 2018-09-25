@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 }
 
+html, .row {
+	margin: 0;
+	padding: 0;
+}
+
+
 body {
 	font-family: 'Quicksand', sans-serif;
 }
@@ -13,7 +19,7 @@ body {
 	background-image: url(../img/landing2copy.jpg);
 	background-repeat: none;
 	background-size: cover;
-	padding-top: 210px;
+	padding-top: 260px;
 }
 
 .jumbotron h1 {
@@ -43,5 +49,26 @@ body {
 [class*=col] {
 	border: 1px solid #f2f2f2;
 	padding: 40px;
+}
+
+@media only screen and (max-width: 450px) {
+	.jumbotron h1 {
+		font-size: 2em;
+	}
+
+	.jumbotron .lead {
+		font-size: .8em;
+	}
+
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+	.jumbotron h1 {
+		font-size: 3.5em;
+	}
+
+	.jumbotron .lead {
+		font-size: .9em;
+	}
 }
 

@@ -1,7 +1,12 @@
-html, * {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+html, .row {
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -89,14 +94,9 @@ body {
 	text-decoration: none;
 	background-color: #680505;
 }
-
-
-
-
 /*end of navbar*/
 
-/*carousel*/
-/*end of carousel*/
+
 
 /*cards*/
 #three {
@@ -139,7 +139,6 @@ body {
 #three .modal .modal-dialog .modal-header span:hover {
 	color: #141414;
 }
-
 /*end of cards*/
 
 
@@ -194,8 +193,7 @@ body {
 }
 
 #four .footer .embed-responsive iframe {
-	padding: 0 30px 20px 30px;	
-	/*edit*/
+	padding: 0 30px 20px 30px;
 }
 
 /*end of footer1*/
@@ -211,41 +209,55 @@ body {
 /*end of footer2*/
 
 @media only screen and (max-width: 450px) {
-	main {
-		font-size: 90%;
+	#three h3 {
+		font-size: 1.3em;
 	}
 
-	h3 {
-		font-size: 1.3em;
+	#three h5 {
+		font-size: 1.1em;
+	}
+
+	#three p {
+		font-size: .8em;
 	}
 
 	#backtotop {
 		font-size: .7em;
 	}
 
-	.fixed-top {
-		left: 1%;
-		right: 5%;
+	#four .footer .disclaimer {
+		font-size: .8em;
+		margin: 10px 20px 5px;
 	}
 
-	.modal {
-		left: 1%;
-		right: 5%;
+	#four .footer [class*=col] {
+		border: 1px solid #390303;
 	}
-
 }
 
 @media only screen and (min-width: 451px) and (max-width: 768px) {
-	main {
-		font-size: 80%;
+	#three h3 {
+		font-size: 1.5em;
+	}
+
+	#three h5 {
+		font-size: 1.3em;
+	}
+
+	#three p {
+		font-size: .9em;
 	}
 
 	#backtotop {
 		font-size: .8em;
 	}
 
-	.fixed-top {
-		left: 3%;
-		right: 5%;
+	.col2 .fab {
+		padding-top: 5px;
+	}
+
+	#four .footer .disclaimer {
+		font-size: .7em;
+		margin-top: 5px;
 	}
 }

@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+html, .row {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: 'Quicksand', sans-serif;
 	background-color: #f2f2f2;
@@ -26,8 +31,6 @@ body {
 /*navbar*/
 .navbar {
 	background-color: transparent !important;
-	/*background-color: #f2f2f2 !important;*/
-	/*opacity: .8;*/
 }
 
 .navbar .navbar-brand {
@@ -92,7 +95,6 @@ body {
 	background-color: #680505;
 	text-decoration: none;
 }
-
 /*end of navbar*/
 
 /*recipes section*/
@@ -210,7 +212,6 @@ body {
 	padding: 0 30px 20px 30px;	
 	/*edit*/
 }
-
 /*end of footer1*/
 
 /*footer2*/
@@ -224,60 +225,82 @@ body {
 /*end of footer2*/
 
 @media only screen and (max-width: 450px) {
-	main {
-		font-size: 90%;
-	}
-
 	h1 {
-		font-size: 1.3em;
+		font-size: 1.5em;
 	}
 
 	h5 {
 		font-size: 1.1em;
 	}
 
+	#two {
+		padding: 70px 20px 10px 20px;
+	}
+
 	#two .card .btn {
 		font-size: .7em;
 	}
 
-	.fixed-top {
-		left: 1%;
-		right: 5%;
+	#two [class*=.col] {
+		margin-top: 2px;
 	}
 
-	.modal {
-		left: 1%;
-		right: 5%;
+	#two .card {
+		border: none;
+		margin: 4px;
 	}
 
 	#backtotop {
 		font-size: .7em;
+	}
+
+	#four .footer .disclaimer {
+		font-size: .8em;
+		margin: 10px 20px 5px;
+	}
+
+	#four .footer [class*=col] {
+		border: 1px solid #390303;
 	}
 }
 
 @media only screen and (min-width: 451px) and (max-width: 768px) {
-	main {
-		font-size: 80%;
-	}
-
 	h1 {
-		font-size: 2.2em;
+		font-size: 1.7em;
 	}
 
 	h5 {
-		font-size: 1.8em;
+		font-size: 1.3em;
+	}
+
+	#two {
+		padding: 70px 20px 20px 20px;
+	}
+
+	#two [class*=.col] {
+		margin: 0;
+	}
+
+	#two .card {
+		border: none;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	#two .card .btn {
 		font-size: .8em;
 	}
 
-	.fixed-top {
-		left: 3%;
-		right: 5%;
-	}
-
 	#backtotop {
 		font-size: .8em;
+	}
+
+	.col2 .fab {
+		padding-top: 5px;
+	}
+
+	#four .footer .disclaimer {
+		font-size: .7em;
+		margin-top: 5px;
 	}
 }
